@@ -13,8 +13,10 @@
 .button-white{
     background: #fff;
     color: $black; 
+    border: none;
 
     &:hover{
+        border: none;
         color: #fff;
         background: $black;
     }
