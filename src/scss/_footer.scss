@@ -24,6 +24,57 @@
         .top__phone{
           @include text(#272727,32px,300)
         }
+
+        @media screen and (max-width: 1700px) {
+          .top__logo{
+            max-width: 230px;
+          }
+
+          .top__nav{
+            .nav__item{
+              @include text(#272727,22px,400);
+              margin-right: 36px;
+            }
+          }
+
+          .top__phone{
+            @include text(#272727,26px,300)
+          }
+        }
+
+        @media screen and (max-width: 1400px) {
+          .top__nav{
+            .nav__item{
+              @include text(#272727,20px,400);
+              margin-right: 26px;
+            }
+          }
+        }
+
+        @media screen and (max-width: 1250px) {
+          .top__nav{
+            .nav__item{
+              @include text(#272727,20px,400);
+              margin: 0px 13px;
+            }
+          }
+
+          .top__phone{
+            @include text(#272727,24px,300)
+          }
+        }
+
+        @media screen and (max-width: 1150px) {
+          .top__logo{
+            max-width: 200px;
+          }
+          .top__nav{
+            .nav__item{
+              @include text(#272727,20px,400);
+              margin: 0px 8px;
+            }
+          }
+        }
       }
   
       .footer__contacts{
@@ -47,6 +98,10 @@
           margin-left: 50%;
           transform: translateX(-50%);
           @include text(#272727,18px,300,22px);
+
+          @media screen and (max-width: 1150px) {
+            margin-left: 60%;
+          }
         }
   
         .contacts__socials{

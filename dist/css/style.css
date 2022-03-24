@@ -1506,7 +1506,7 @@ a {
 }
 
 .devices__item .item__images .images__bottom {
-  margin-bottom: 0;
+  margin-bottom: -4px;
 }
 
 .devices__item .pixels_block {
@@ -1542,7 +1542,7 @@ a {
 }
 
 .about_us__content .content__list .list__item .item__img {
-  width: 100% !important;
+  width: 55% !important;
 }
 
 .about_us__content .content__list .list__item .item__text {
@@ -1605,6 +1605,10 @@ a {
   padding: 0px 50px;
 }
 
+.cosmetical_tools__content img {
+  display: block;
+}
+
 .cosmetical_tools__content .content__vials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1637,6 +1641,35 @@ a {
   z-index: 2;
 }
 
+.cosmetical_tools__content .vials__mb {
+  display: none;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 50px;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.cosmetical_tools__content .vials__mb .vials__red {
+  position: relative;
+  -webkit-transform: translateX(25%);
+      -ms-transform: translateX(25%);
+          transform: translateX(25%);
+  z-index: 1;
+}
+
+.cosmetical_tools__content .vials__mb .vials__green {
+  position: relative;
+  z-index: 2;
+}
+
 .cosmetical_tools__content .content__info {
   padding-bottom: 90px;
   margin-left: 0px;
@@ -1645,6 +1678,8 @@ a {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  position: relative;
+  z-index: 2;
 }
 
 .cosmetical_tools__content .content__info .info__title {
@@ -1717,7 +1752,6 @@ a {
 
 .benefits {
   padding: 126px 0px;
-  padding-left: 20px;
 }
 
 .benefits__content {
@@ -2010,6 +2044,64 @@ a {
   border-color: rgba(132, 132, 132, 0.23) !important;
 }
 
+@media screen and (max-width: 1700px) {
+  .footer .footer__content .footer__top .top__logo {
+    max-width: 230px;
+  }
+
+  .footer .footer__content .footer__top .top__nav .nav__item {
+    color: #272727;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 36px;
+  }
+
+  .footer .footer__content .footer__top .top__phone {
+    color: #272727;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .devices__item {
+    overflow: hidden;
+    padding-left: 40px;
+  }
+
+  .about_us__content .content__list .list__item .item__img {
+    width: 60%;
+  }
+
+  .about_us__content .content__list .list__item .item__text {
+    color: #272727;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: normal;
+    padding: 26px 50px 47px 39px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .intro .intro__content .content__info .sliders .sliders__content .info__slider_image .info__slider__slide img {
+    max-width: 90%;
+  }
+
+  .devices__item .item__info .info__title {
+    color: #272727;
+    font-size: 27px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .devices__item .item__info .info__text {
+    color: #272727;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+}
+
 @media screen and (max-width: 1550px) {
   .navbar__info .info__text {
     margin-left: 30px;
@@ -2028,6 +2120,80 @@ a {
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .intro .intro__content .content__info .sliders .sliders__content .info__slider_text .info__slider__slide .slide__suptitle {
+    color: #272727;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 80%;
+  }
+
+  .intro .intro__content .content__info .sliders .sliders__content .info__slider_text .info__slider__slide .slide__title {
+    color: #272727;
+    font-size: 57px;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 30px;
+  }
+
+  .intro .intro__content .content__info .sliders .sliders__content .info__slider_text .info__slider__slide .slide__grey {
+    padding-left: 18px;
+  }
+
+  .intro .intro__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+  }
+
+  .intro .intro__bottom_pixels {
+    right: 2vw;
+  }
+
+  .intro {
+    padding-top: 60px;
+  }
+
+  .devices__item .item__images img {
+    margin-left: -25px;
+    max-width: 120%;
+  }
+
+  .devices__item .pixels_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .cosmetical_tools__content .content__vials {
+    margin-left: -100px;
+  }
+
+  .news .news__content .content__list .list__item {
+    max-height: 350px !important;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .benefits .benefits__container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .benefits__content .content__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .benefits__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 44%;
+            flex: 0 1 44%;
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .navbar__info .info__text {
     max-width: 340px;
@@ -2043,6 +2209,101 @@ a {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .footer .footer__content .footer__top .top__nav .nav__item {
+    color: #272727;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 26px;
+  }
+
+  .devices__item .item__images img {
+    margin-left: -40px;
+    max-width: 130%;
+  }
+
+  .about_us__content .content__list .list__item .item__text {
+    color: #272727;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    padding: 26px 40px 47px 29px;
+  }
+
+  .cosmetical_tools .right_pixels {
+    height: auto;
+    top: initial;
+    bottom: 0;
+  }
+
+  .cosmetical_tools__content .content__vials {
+    margin-left: -120px;
+  }
+
+  .cosmetical_tools__content .vials__mb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 17vw;
+  }
+
+  .cosmetical_tools__content .content__info {
+    padding-top: 120px;
+    padding-bottom: 0px;
+    margin-bottom: -45px;
+  }
+
+  .cosmetical_tools__content .content__creams .creams__yellow {
+    -webkit-transform: translateX(6%);
+        -ms-transform: translateX(6%);
+            transform: translateX(6%);
+    margin-right: -30vw;
+  }
+
+  .cosmetical_tools__content .content__creams .creams__blue {
+    -webkit-transform: translateX(60%);
+        -ms-transform: translateX(60%);
+            transform: translateX(60%);
+  }
+
+  .cosmetical_tools__content .content__creams .creams__violet {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+
+  .cosmetical_tools__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .cosmetical_tools__content .content__vials {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: none;
+  }
+
+  .cosmetical_tools__content .content__info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .cosmetical_tools__content .content__creams {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .news .news__content .content__list .list__item {
+    max-height: 320px !important;
+  }
+}
+
 @media screen and (max-width: 1330px) {
   .navbar__contacts .contacts__phone {
     margin: 0px 20px;
@@ -2053,9 +2314,166 @@ a {
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .intro .intro__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 76%;
+            flex: 0 1 76%;
+  }
+
+  .devices__item .item__images img {
+    max-width: 120%;
+    margin-bottom: 34px;
+  }
+
+  .manufacturers__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 46%;
+            flex: 0 1 46%;
+  }
+
+  .manufacturers__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 @media screen and (max-width: 1250px) {
   .navbar__info .info__text {
     display: none;
+  }
+
+  .footer .footer__content .footer__top .top__nav .nav__item {
+    color: #272727;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 13px;
+  }
+
+  .footer .footer__content .footer__top .top__phone {
+    color: #272727;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .news .news__content .content__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .news .news__content .content__list .list__item {
+    max-height: 280px !important;
+    margin-bottom: 40px;
+  }
+
+  .news .content__btn {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .intro .intro__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 86%;
+            flex: 0 1 86%;
+  }
+
+  .devices__item .item__info {
+    padding-bottom: 20px;
+  }
+
+  .devices__item .item__images img {
+    margin-left: 0px;
+    margin-right: 20px;
+    max-width: 80%;
+  }
+
+  .devices__item .item__images {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding-right: 0px;
+  }
+
+  .devices__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .about_us__content .content__list .list__item .item__text {
+    color: #272727;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: normal;
+    padding: 26px 30px 47px 29px;
+  }
+
+  .cosmetical_tools .left_top_pixels {
+    top: 0px;
+    left: -270px;
+  }
+
+  .cosmetical_tools__content .vials__mb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+  }
+
+  .cosmetical_tools__content .content__creams {
+    width: 100%;
+  }
+
+  .benefits .benefits__container {
+    max-width: 1000px;
+  }
+
+  .benefits__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 47%;
+            flex: 0 1 47%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .footer .footer__content .footer__top .top__logo {
+    max-width: 200px;
+  }
+
+  .footer .footer__content .footer__top .top__nav .nav__item {
+    color: #272727;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 8px;
+  }
+
+  .footer .footer__content .footer__contacts .contacts__email {
+    margin-left: 60%;
+  }
+
+  .news .news__content .content__list {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .news .news__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 47%;
+            flex: 0 1 47%;
+    max-height: 340px !important;
+    margin-bottom: 40px;
   }
 }
 
