@@ -1180,6 +1180,10 @@ body {
   overflow-x: hidden;
 }
 
+.overf_hidden {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,

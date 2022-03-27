@@ -35,6 +35,8 @@ const menuBar = document.querySelector('#cmp_navbar__bar')
 burgerBtn.addEventListener('click',(e)=>{
     burgerBtn.classList.toggle('contacts__burger_active');
     menuBar.classList.toggle('menu_active');
+
+    document.body.classList.toggle('overf_hidden')
 });
 //Intro
 const mainPageTextSlider = new Swiper('#main_page-intro_text_slider', {
