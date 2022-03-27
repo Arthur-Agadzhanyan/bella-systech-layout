@@ -2801,6 +2801,34 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+
+  .cosmetical_tools__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    margin-bottom: 0;
+  }
+
+  .cosmetical_tools__content .content__creams .vials__green {
+    max-height: 500px;
+  }
+
+  .cosmetical_tools__content .content__creams .vials__red {
+    max-height: 400px;
+  }
+
+  .cosmetical_tools__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -2869,6 +2897,19 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+
+  .cosmetical_tools__content .content__creams .vials__mb {
+    margin-left: -7vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .cosmetical_tools__content .content__creams {
+    max-height: 45vh;
+    -webkit-transform: translateY(15.5%) scale(0.7);
+        -ms-transform: translateY(15.5%) scale(0.7);
+            transform: translateY(15.5%) scale(0.7);
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -2915,6 +2956,11 @@ a {
     margin-bottom: 17px;
   }
 
+  .cosmetical_tools__content .content__info {
+    min-width: initial;
+    width: 100%;
+  }
+
   .benefits__content .content__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2947,6 +2993,38 @@ a {
 
   .news .content__btn .btn__arrow {
     margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .cosmetical_tools__content .content__creams {
+    max-height: 45vh;
+    -webkit-transform: translateY(15.5%) scale(0.7);
+        -ms-transform: translateY(15.5%) scale(0.7);
+            transform: translateY(15.5%) scale(0.7);
+  }
+
+  .cosmetical_tools__content .content__creams .vials__mb {
+    margin-left: -17vw;
+  }
+
+  .cosmetical_tools__content .content__creams .creams__yellow {
+    -webkit-transform: translateX(18%);
+        -ms-transform: translateX(18%);
+            transform: translateX(18%);
+    margin-right: -30vw;
+  }
+
+  .cosmetical_tools__content .content__creams .creams__blue {
+    -webkit-transform: translateX(60%);
+        -ms-transform: translateX(60%);
+            transform: translateX(60%);
+  }
+
+  .cosmetical_tools__content .content__creams .creams__violet {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -3094,6 +3172,48 @@ a {
     font-weight: 300;
     line-height: normal;
     padding: 21px 21px 25px 17px;
+  }
+
+  .cosmetical_tools .left_top_pixels {
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+
+  .cosmetical_tools .left_bottom_pixels {
+    display: none;
+  }
+
+  .cosmetical_tools .right_pixels {
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+
+  .cosmetical_tools__content .content__creams .vials__mb {
+    margin-left: -15vw;
+    margin-right: 20px;
+  }
+
+  .cosmetical_tools__content .content__creams .creams__yellow {
+    -webkit-transform: translateX(6%) scale(1.2);
+        -ms-transform: translateX(6%) scale(1.2);
+            transform: translateX(6%) scale(1.2);
+    margin-right: -30vw;
+    margin-bottom: 30px;
+  }
+
+  .cosmetical_tools__content .content__creams .creams__blue {
+    -webkit-transform: translateX(26%) translateY(-105%);
+        -ms-transform: translateX(26%) translateY(-105%);
+            transform: translateX(26%) translateY(-105%);
+  }
+
+  .cosmetical_tools__content .content__creams .creams__violet {
+    -webkit-transform: translateX(-60%);
+        -ms-transform: translateX(-60%);
+            transform: translateX(-60%);
+    margin-bottom: -40px;
   }
 }
 
@@ -3271,6 +3391,23 @@ a {
     line-height: normal;
   }
 
+  .cosmetical_tools__content .content__creams .vials__mb {
+    margin-left: -25vw;
+    margin-right: 70px;
+  }
+
+  .cosmetical_tools__content .content__creams .vials__green {
+    max-height: 400px;
+  }
+
+  .cosmetical_tools__content .content__creams .vials__red {
+    max-height: 300px;
+  }
+
+  .cosmetical_tools__content {
+    padding: 0;
+  }
+
   .benefits__content .content__list .list__item {
     margin-left: 10px;
     -webkit-box-flex: 0;
@@ -3301,6 +3438,27 @@ a {
             flex: 0 1 80%;
     margin: 0 auto;
     margin-bottom: 32px;
+  }
+
+  .cosmetical_tools__content .content__creams .creams__yellow {
+    -webkit-transform: translateX(6%) scale(1.2);
+        -ms-transform: translateX(6%) scale(1.2);
+            transform: translateX(6%) scale(1.2);
+    margin-right: -30vw;
+    margin-bottom: 30px;
+  }
+
+  .cosmetical_tools__content .content__creams .creams__blue {
+    -webkit-transform: translateX(10%) translateY(-105%);
+        -ms-transform: translateX(10%) translateY(-105%);
+            transform: translateX(10%) translateY(-105%);
+  }
+
+  .cosmetical_tools__content .content__creams .creams__violet {
+    -webkit-transform: translateX(-75%);
+        -ms-transform: translateX(-75%);
+            transform: translateX(-75%);
+    margin-bottom: -40px;
   }
 
   .manufacturers__list .list__item {
@@ -3488,6 +3646,42 @@ a {
     padding: 50px 0px;
   }
 
+  .cosmetical_tools__content .content__info {
+    padding-top: 40px;
+  }
+
+  .cosmetical_tools__content .content__info .info__title {
+    margin-bottom: auto;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 100%;
+  }
+
+  .cosmetical_tools__content .content__info .info__subtitle {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 32px;
+  }
+
+  .cosmetical_tools__content .content__info .info__btn {
+    padding: 13px 35px;
+  }
+
+  .cosmetical_tools__content .content__creams {
+    max-height: 40vh;
+    -webkit-transform: translateY(20%) scale(0.6);
+        -ms-transform: translateY(20%) scale(0.6);
+            transform: translateY(20%) scale(0.6);
+  }
+
+  .cosmetical_tools__content .content__creams .vials__mb {
+    margin-left: -25vw;
+    margin-right: 10px;
+  }
+
   .benefits__content .content__list {
     margin-top: 32px;
   }
@@ -3539,6 +3733,13 @@ a {
     font-size: 22px;
     font-weight: 300;
     line-height: normal;
+  }
+
+  .cosmetical_tools__content .content__creams {
+    max-height: 35vh;
+    -webkit-transform: translateY(25%) translateX(-5%) scale(0.5);
+        -ms-transform: translateY(25%) translateX(-5%) scale(0.5);
+            transform: translateY(25%) translateX(-5%) scale(0.5);
   }
 
   .news .news__content .content__list .list__item .item__info .info__arrow {
@@ -3688,6 +3889,38 @@ a {
             flex: 0 1 100%;
   }
 
+  .cosmetical_tools .left_top_pixels {
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+    top: 5%;
+  }
+
+  .cosmetical_tools .right_pixels {
+    -webkit-transform: translateX(50%) translateY(10%) scale(0.7);
+        -ms-transform: translateX(50%) translateY(10%) scale(0.7);
+            transform: translateX(50%) translateY(10%) scale(0.7);
+  }
+
+  .cosmetical_tools__content .content__info .info__title {
+    margin-bottom: auto;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 100%;
+  }
+
+  .cosmetical_tools__content .content__info .info__subtitle {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .cosmetical_tools__content .content__creams .vials__mb {
+    margin-left: -36vw;
+  }
+
   .benefits__content .content__list .list__item .item__image {
     max-width: 65px;
   }
@@ -3757,6 +3990,27 @@ a {
     font-style: 16px;
     line-height: 100%;
   }
+
+  .cosmetical_tools__content .content__creams .creams__yellow {
+    -webkit-transform: translateX(6%) scale(1.2);
+        -ms-transform: translateX(6%) scale(1.2);
+            transform: translateX(6%) scale(1.2);
+    margin-right: -30vw;
+    margin-bottom: 30px;
+  }
+
+  .cosmetical_tools__content .content__creams .creams__blue {
+    -webkit-transform: translateX(-15%) translateY(-105%);
+        -ms-transform: translateX(-15%) translateY(-105%);
+            transform: translateX(-15%) translateY(-105%);
+  }
+
+  .cosmetical_tools__content .content__creams .creams__violet {
+    -webkit-transform: translateX(-94%);
+        -ms-transform: translateX(-94%);
+            transform: translateX(-94%);
+    margin-bottom: -40px;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -3788,6 +4042,48 @@ a {
     font-size: 18px;
     font-weight: 300;
     line-height: normal;
+  }
+
+  .cosmetical_tools__content .content__info .info__subtitle {
+    max-width: 204px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cosmetical_tools__content .content__creams {
+    margin-bottom: -20px;
+  }
+
+  .cosmetical_tools__content .content__creams .vials__mb {
+    margin-right: -12px;
+  }
+
+  .cosmetical_tools__content .content__creams .vials__green {
+    max-height: 50vh;
+    margin-bottom: 20px;
+  }
+
+  .cosmetical_tools__content .content__creams .vials__red {
+    max-height: 35vh;
+    margin-bottom: 20px;
+  }
+
+  .cosmetical_tools__content .content__creams .creams__yellow {
+    -webkit-transform: translateX(6%) scale(1);
+        -ms-transform: translateX(6%) scale(1);
+            transform: translateX(6%) scale(1);
+  }
+
+  .cosmetical_tools__content .content__creams .creams__blue {
+    -webkit-transform: translateX(-27%) translateY(-105%) scale(0.9);
+        -ms-transform: translateX(-27%) translateY(-105%) scale(0.9);
+            transform: translateX(-27%) translateY(-105%) scale(0.9);
+  }
+
+  .cosmetical_tools__content .content__creams .creams__violet {
+    -webkit-transform: translateX(-104%) scale(0.9);
+        -ms-transform: translateX(-104%) scale(0.9);
+            transform: translateX(-104%) scale(0.9);
   }
 
   .news .news__content .content__list .list__item .item__info {
