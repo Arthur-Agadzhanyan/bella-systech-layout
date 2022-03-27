@@ -115,6 +115,15 @@ a{
 
         @include text(#272727, 24px, 700);
         letter-spacing: -0.02em;
+
+        @media screen and (max-width: 600px) {
+          padding-bottom: 90px;
+          font-weight: 300;
+        }
+
+        @media screen and (max-width: 360px) {
+          @include text(#272727, 16px, 300);
+        }
       }
 
       .info__slider__pagination {
@@ -124,6 +133,7 @@ a{
         max-width: 40%;
 
         position: absolute;
+        z-index: 30;
 
         .pagination__item {
           width: 14px;
@@ -146,11 +156,40 @@ a{
             background: #DD408B;
             color: #DD408B
           }
+
+          @media screen and(max-width: 1000px) {
+            background: #ABABAB;
+            color: #ABABAB;
+            &_active {
+              background: #DD408B;
+              color: #DD408B
+            }
+          }
+          @media screen and (max-width: 500px) {
+            width: 10px;
+            height: 10px;
+            margin-right: 15px;
+          }
+        }
+
+        @media screen and (max-width: 700px) {
+          left: 60px;
+        }
+        @media screen and (max-width: 500px) {
+          left: 30px;
+        }
+        @media screen and (max-width: 400px) {
+          max-width: 60%;
+        }
+        @media screen and (max-width: 360px) {
+          left: 20px;
         }
       }
 
       .sliders{
         .sliders__content{
+          position: relative;
+
           background: linear-gradient(to bottom,#F1F1F1 79%,#fff 25%);;
           display: flex;
 
@@ -161,10 +200,52 @@ a{
             &_text{
               flex: 0 1 47%;
             }
-          }
 
-          .info__slider {
+            @media screen and (max-width: 1000px) {
+              flex: 0 1 35%;
 
+              &_text{
+                flex: 0 1 60%;
+              }
+            }
+            
+            @media screen  and (max-width: 800px){
+              flex: 0 1 40%;
+
+              &_text{
+                flex: 0 1 70%;
+                margin-bottom: 0px;
+              }
+            }
+
+            @media screen and (max-width: 700px) {
+              &_text{
+                flex: 0 1 80%;
+                margin-bottom: 0px;
+              }
+            }
+
+            @media screen and (max-width: 600px) {
+              flex: 0 1 40%;
+
+              &_text{
+                position: relative;
+                z-index: 10;
+                flex: 0 1 100%;
+                margin-bottom: 0px;
+              }
+            }
+
+            @media screen and (max-width: 400px) {
+              flex: 0 1 5%;
+
+              &_text{
+                position: relative;
+                z-index: 10;
+                flex: 0 1 100%;
+                margin-bottom: 0px;
+              }
+            }
           }
 
           .info__slider_text{
@@ -174,6 +255,10 @@ a{
             .info__slider__slide{
               .slide__logo{
                 margin-bottom: 15px;
+
+                @media screen and (max-width: 700px) {
+                  margin-bottom: 13px;
+                }
               }
 
               .slide__suptitle{
@@ -181,6 +266,13 @@ a{
 
                 @media screen and (max-width: 1500px) {
                   @include text(#272727,35px,300,80%);
+                }
+
+                @media screen and (max-width: 700px) {
+                  @include text(#272727,28px,300,80%);
+                }
+                @media screen and (max-width: 500px) {
+                  @include text(#272727,22px,300,80%);
                 }
               }
 
@@ -192,25 +284,67 @@ a{
                   @include text(#272727,57px,400);
                   padding-bottom: 30px;
                 }
+
+                @media screen and (max-width: 700px) {
+                  @include text(#272727,52px,400);
+                }
+
+                @media screen and (max-width: 500px) {
+                  @include text(#272727,48px,400);
+                  padding-bottom: 16px;
+                }
               }
 
               .slide__grey{
                 padding-left: 42px;
                 padding-right: 42px;
+
                 .slide__text{
                   padding-bottom: 49px;
                   font-family: "Garamond";
                   @include text(#272727,24px,400);
+
+                  @media screen and (max-width: 500px) {
+                    @include text(#272727,20px,400);
+                    padding-bottom: 29px;
+                  }
+
+                  @media screen and (max-width: 400px) {
+                    @include text(#272727,16px,400,16px);
+                  }
                 }
 
                 .slide__btn{
                   font-size: 18px;
                   padding: 21px 56px;
+
+                  @media screen and (max-width: 500px) {
+                    padding: 13px 33px;
+                  }
                 }
                 @media screen and (max-width: 1500px) {
                   padding-left: 18px;
                 }
+
+                @media screen and (max-width:700px) {
+                  padding-left: 0px;
+                }
               }
+              @media screen and (max-width:700px) {
+                padding-left: 40px;
+              }
+              @media screen and (max-width:400px) {
+                padding-left: 33px;
+              }
+            }
+            @media screen and (max-width: 700px) {
+              margin-top: -10vh;
+              margin-left: 0px;
+            }
+
+            @media screen and (max-width: 600px) {
+              margin-top: -66px;
+              margin-left: 0px;
             }
           }
 
@@ -224,6 +358,12 @@ a{
               @media screen and (max-width: 1600px) {
                 img{
                   max-width: 90%;
+                }
+              }
+
+              @media screen and (max-width: 700px) {
+                img{
+                  max-width: 100%;
                 }
               }
             }
@@ -244,7 +384,53 @@ a{
               &_next{
                 right: 20px;
               }
+              @media screen and (max-width: 1000px) {
+                display: none;
+              }
             }
+
+            @media screen  and (max-width: 800px){
+              position: absolute;
+              bottom: 0px;
+              right: -30px;
+              max-width: 40%;
+
+              img{
+                display: block;
+              }
+            }
+
+            @media screen  and (max-width: 500px){
+              right: -30px;
+              max-width: 50%;
+            }
+
+            @media screen  and (max-width: 400px){
+              right: -30px;
+              max-width: 55%;
+            }
+            @media screen and (max-width: 360px) {
+              max-width: 60%;
+            }
+          }
+
+          @media screen and (max-width: 1000px) {
+            padding-bottom: 20px;
+          }
+
+          @media screen and (max-width: 800px) {
+            min-height: 50vh;
+          }
+
+          @media screen and (max-width: 700px) {
+            min-height: 60vh;
+          }
+
+          @media screen and (max-width: 400px) {
+            min-height: 60vh;
+          }
+          @media screen and (max-width: 360px) {
+            min-height: 62vh;
           }
         }
       }
@@ -252,11 +438,17 @@ a{
       @media screen and (max-width: 1500px) {
         flex: 0 1 70%;
       }
+
       @media screen and (max-width: 1300px) {
         flex: 0 1 76%;
       }
+
       @media screen and (max-width: 1200px) {
         flex: 0 1 86%;
+      }
+
+      @media screen and (max-width: 1000px) {
+        flex: 0 1 100%;
       }
     }
 
@@ -271,6 +463,68 @@ a{
         width: 100%;
         display: block;
       }
+
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+
+    .mb_slider_arrow{
+      display: none;
+      top: 55%;
+
+      img{
+        transform: scale(1.4);
+
+        @media screen and (max-width: 650px) {
+          transform: scale(1.1);
+        }
+        @media screen and (max-width: 450px) {
+          transform: scale(1);
+        }
+        @media screen and (max-width: 400px) {
+          transform: scale(.8);
+        }
+      }
+
+      &::after{
+        content: '';
+      }
+
+      &-prev{
+        left: -15px;
+
+        @media screen and (max-width: 650px) {
+          left: 0px;
+        }
+      }
+      &-next{
+        right: 0px;
+        @media screen and (max-width: 650px) {
+          right: 15px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+       top: 50%;
+      }
+      @media screen and (max-width: 500px) {
+        top: 43%;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      .mb_slider_arrow{
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      width: 100vw;
+      margin-left: -24px;
+    }
+
+    @media screen and (max-width: 450px) {
+      margin-left: -16px;
     }
   }
 
@@ -278,12 +532,22 @@ a{
     position: absolute;
     top: 58px;
     left: 42.5%;
+
+    @media screen and (max-width: 1000px) {
+      left: initial;
+      right: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   .intro__bottom_pixels{
     position: absolute;
     bottom: 40px;
     right: 9.5vw;
+
     @media screen and (max-width: 1500px) {
       right: 2vw;
     }
@@ -291,6 +555,16 @@ a{
 
   @media screen and (max-width: 1500px) {
     padding-top: 60px;
+  }
+  @media screen and (max-width: 1000px) {
+    padding-bottom: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    padding-top: 35px;
+  }
+
+  @media screen and (max-width: 500px) {
+    overflow: hidden;
   }
 }
 
@@ -319,6 +593,17 @@ a{
         @media screen and (max-width: 380px) {
           max-width: 80% !important;
         }
+      }
+
+      @media screen and (max-width: 500px) {
+        .biggest_img{
+          transform: scale(1.3) translateY(-10%) translateX(-10%)!important;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        padding-top: 50px;
+        padding-bottom: 0px !important;
       }
     }
 
@@ -370,6 +655,10 @@ a{
           margin: 0 auto;
         }
 
+        @media screen and (max-width: 400px) {
+          padding-bottom: 32px;
+        }
+
         @media screen and (max-width: 380px) {
           max-width: 94%;
           font-style: 16px;
@@ -395,6 +684,14 @@ a{
           margin: 0 auto;
         }
       }
+
+      @media screen and (max-width: 400px) {
+        .info__btn{
+          button{
+            padding: 13px 32px;
+          }
+        }
+      }
     }
 
     .item__images{
@@ -402,6 +699,7 @@ a{
       display: flex;
       align-items: flex-end;
       padding-right: 15px;
+
 
       img{
         pointer-events: none !important;
@@ -429,7 +727,6 @@ a{
       }
 
       .images__bottom{
-        margin-bottom: -4px;
       }
 
       @media screen and (max-width: 1200px) {
@@ -449,6 +746,17 @@ a{
             flex: 0 1 50%;
             margin-left: 20px;
           }
+      }
+
+      @media screen and (max-width: 500px) {
+        .biggest_img{
+          transform: scale(1.2) translateY(7%) translateX(-10%);
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .biggest_img{
+          transform: scale(1.3) translateY(7%) translateX(-10%);
+        }
       }
     }
 
@@ -486,9 +794,10 @@ a{
         left: 0;
       }
       &-3{
-        top: 190px;
+        top: 42%;
         transform: translateY(-50%);
-        left: 0;
+        mix-blend-mode: darken;
+        left: -16px;
       }
 
       @media screen and (max-width: 650px) {
@@ -511,15 +820,23 @@ a{
       padding-left: 40px;
       padding-right: 40px;
     }
+    
     @media screen and (max-width: 650px) {
       padding-left: 24px;
       padding-right: 24px;
     }
+
+    @media screen and (max-width: 500px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
     @media screen and (max-width: 450px) {
       padding-left: 16px;
       padding-right: 16px;
     }
   }
+
   @media screen and (max-width: 900px) {
     flex-wrap: wrap;
   }
@@ -628,6 +945,10 @@ a{
         flex-wrap: wrap;
       }
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 50px 0px;
   }
 }
 
@@ -961,6 +1282,11 @@ a{
         }
       }
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 

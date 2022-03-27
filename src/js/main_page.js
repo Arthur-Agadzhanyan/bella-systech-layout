@@ -15,6 +15,10 @@ const mainPageTextSlider = new Swiper('#main_page-intro_text_slider', {
         renderBullet: function (index, className) {
             return '<div class="' + className + '">*</div>';
         }
+    },
+    navigation: {
+        prevEl: '#main_page-intro_slider_mb_prev',
+        nextEl: '#main_page-intro_slider_mb_next'
     }
 })
 
@@ -34,7 +38,6 @@ mainPageTextSlider.controller.control = mainPageImageSlider
 mainPageImageSlider.controller.control = mainPageTextSlider
 
 //News
-
 const mainPageNewsMbSlider = new Swiper('#main_page-news_mb_slider', {
     slidesPerView: 1,
     loop: true,
