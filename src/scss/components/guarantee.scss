@@ -1,0 +1,142 @@
+.guarantee{
+    padding: 124px 80px;
+    background: #F1F1F1;
+
+    &__content{
+        .content__list{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+
+            .list__item{
+                flex: 0 1 32%;
+                background: #fff;
+
+                .item__img{
+                    max-width: 50%;
+                }
+
+                .item__info{
+                    padding: 47px 27px 55px 56px;
+
+                    .info__title{
+                        @include text($black,32px,300);
+
+                        @media screen and (max-width: 2000px) {
+                            @include text($black,28px,300);
+                        }
+
+                        @media screen and (max-width: 1850px) {
+                            @include text($black,25px,300);
+                        }
+                        @media screen and (max-width: 1600px) {
+                            @include text($black,22px,300);
+                        }
+                        @media screen and (max-width: 1400px) {
+                            @include text($black,27px,300);
+                        }
+                        @media screen and (max-width: 1150px) {
+                            @include text($black,24px,300);
+                        }
+                        @media screen and (max-width: 1050px) {
+                            @include text($black,22px,300);
+                        }
+                        @media screen and (max-width: 900px) {
+                            @include text($black,27px,300);
+                        }
+                        @media screen and (max-width: 500px) {
+                            @include text($black,26px,300,80%);
+                        }
+                    }
+                    .info__text{
+                        font-family: Garamond;
+                        margin-top: 20px;
+                        padding-left: 18px ;
+                        padding-right: 10px;
+
+                        @include text($black,20px,300);
+
+                        @media screen and (max-width: 1600px) {
+                            @include text($black,19px,300);
+                            margin-top: 12px;
+                        }
+                        @media screen and (max-width: 1400px) {
+                            @include text($black,20px,300);
+                            margin-top: 18px;
+                        }
+
+                        @media screen and (max-width: 1050px) {
+                            margin-top: 9px;
+                            padding-left: 15px;
+                            @include text($black,18px,300);
+                        }
+
+                        @media screen and (max-width: 900px) {
+                            @include text($black,20px,300);
+                            margin-top: 18px;
+                        }
+                        @media screen and (max-width: 500px) {
+                            margin-top: 9px;
+                        }
+                        @media screen and (max-width: 450px) {
+                            @include text($black,16px,300);
+                            padding-right: 20px;
+                        }
+                    }
+
+                    @media screen and (max-width: 1700px) {
+                        padding: 30px 27px 30px 35px;
+                    }
+                    @media screen and (max-width: 1500px) {
+                        padding: 30px 20px 25px 30px; 
+                    }
+                    @media screen and (max-width: 1400px) {
+                        padding: 40px 20px 35px 30px; 
+                    }
+                    @media screen and (max-width: 1150px) {
+                        padding: 30px 20px 25px 30px; 
+                    }
+                    @media screen and (max-width: 1050px) {
+                        padding: 22px 20px 25px 25px; 
+                    }
+                    @media screen and (max-width: 900px) {
+                        padding: 40px 20px 35px 30px;
+                    }
+                    @media screen and (max-width: 500px) {
+                        padding: 15px 20px 35px 15px;
+                    }
+                }
+
+                @media screen and (max-width: 1400px) {
+                    flex: 0 1 48%;
+                    margin-bottom: 38px;
+
+                    &:last-child{
+                        margin: 0 auto;
+                    }
+                }
+
+                @media screen and (max-width: 900px) {
+                    flex: 0 1 85%;
+                    margin: 0 auto;
+                    margin-bottom: 32px;
+                }
+
+                @media screen and (max-width: 750px) {
+                    flex: 0 1 100%;
+                }
+            }
+
+            @media screen and (max-width: 1400px) {
+                flex-wrap: wrap;
+            }
+            @media screen and (max-width: 600px) {
+                margin-top: 32px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 50px 0px;
+    }
+}

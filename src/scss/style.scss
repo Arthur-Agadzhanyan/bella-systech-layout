@@ -21,6 +21,9 @@
 
 //components
 @import "./components/button.scss";
+@import "./components/breadcrumbs.scss";
+@import "./components/list_of_items.scss";
+@import "./components/guarantee.scss";
 @import "./course-enrollment-section.scss";
 
 *{
@@ -71,6 +74,10 @@ a{
     @media screen and (max-width: 450px) {
       padding: 0px 16px;
     }
+}
+
+.page_title{
+  @include text($black,36px,300,100%)
 }
 
 .section_title{

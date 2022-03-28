@@ -1,0 +1,36 @@
+.breadcrumbs{
+    padding-top: 50px;
+    padding-bottom: 32px;
+
+    &__item{
+        @include text($grey,14px,300,100%);
+        position: relative;
+        margin-right: 9px;
+
+        &::after{
+            content: url('../../img/icons/rhombus.svg');
+            // position: absolute;
+            // top:0;
+            // right: 0;
+            width: 4px;
+            height: 4px;
+            position: relative;
+            top: -1px;
+            left: 6px;
+        }
+
+        &-active{
+            color: $black;
+            pointer-events: none;
+
+            &::after{
+                content: "";
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
