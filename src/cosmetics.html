@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html',{title: "Bella Systech | Каталог"})
+
+<body class="products-page">
+    @@include('_navigation.html')
+
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="/" class="breadcrumbs__item">Главная</a>
+            <a href="/catalog.html" class="breadcrumbs__item">Каталог</a>
+            <a href="/cosmetics.html" class="breadcrumbs__item breadcrumbs__item-active">Профессиональная косметика</a>
+        </div>
+
+        <div class="top__panel">
+            <h1 class="page_title">Профессиональная косметика <span>45</span></h1>
+
+            <div class="custom-select">
+                <select id="standard-select">
+                    <option value="Сначала популярные">Сначала популярные</option>
+                    <option value="По стоимости">По стоимости</option>
+                    <option value="По алфавиту">По алфавиту</option>
+                    <option value="По стоимости">По стоимости</option>
+                    <option value="По алфавиту">По алфавиту</option>
+                    <option value="По стоимости">По стоимости</option>
+                </select>
+                <span class="custom-arrow">
+                    <img src="img/icons/select_arrow.svg" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="products__content">
+            <div class="content__filters">
+                <div class="filters__accordion">
+                    <input class="accordion__input" type="checkbox" id="category_md_filter" checked="">
+                    <label class="accordion__trigger" for="category_md_filter">
+                        Категория
+                        <img src="img/icons/select_arrow.svg" class="trigger__arrow" alt="">
+                    </label>
+
+                    <div class="accordion__content">
+                        <div class="content__container">
+                            <label class="container__label">
+                                <input type="radio" checked="checked" name="category" class="label__input">
+                                <span class="label__checkmark"></span>
+                                <span class="label__text">
+                                    Профессиональная косметика
+                                    <span class="text__count">24</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label">
+                                <input type="radio" name="category" class="label__input">
+                                <span class="label__checkmark"></span>
+                                <span class="label__text">
+                                    Пробирки для PRP
+                                    <span class="text__count">4</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label">
+                                <input type="radio" name="category" class="label__input">
+                                <span class="label__checkmark"></span>
+                                <span class="label__text">
+                                    Набор Smart X
+                                    <span class="text__count">4</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters__accordion">
+                    <input class="accordion__input" type="checkbox" id="brand_md_filter" checked="">
+                    <label class="accordion__trigger" for="brand_md_filter">
+                        Бренд
+                        <img src="img/icons/select_arrow.svg" class="trigger__arrow" alt="">
+                    </label>
+
+                    <div class="accordion__content">
+                        <div class="content__container">
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" checked="checked" name="brand" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    HISTOLAB
+                                    <span class="text__count">24</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" name="brand" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    YCELLBIO
+                                    <span class="text__count">26</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" name="brand" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    SKINWELL
+                                    <span class="text__count">62</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" name="brand" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    BNV biolab
+                                    <span class="text__count">5</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters__accordion">
+                    <input class="accordion__input" type="checkbox" id="role_md_filter" checked="">
+                    <label class="accordion__trigger" for="role_md_filter">
+                        Назначение
+                        <img src="img/icons/select_arrow.svg" class="trigger__arrow" alt="">
+                    </label>
+
+                    <div class="accordion__content">
+                        <div class="content__container">
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" name="role" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    Пилинг
+                                    <span class="text__count">4</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" checked="checked" name="role" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    Акне
+                                    <span class="text__count">24</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" name="role" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    Омоложение
+                                    <span class="text__count">8</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" checked="checked" name="role" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    Пилинг
+                                    <span class="text__count">4</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" name="role" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    Акне
+                                    <span class="text__count">24</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" name="role" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    Омоложение
+                                    <span class="text__count">8</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" name="role" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    Пилинг
+                                    <span class="text__count">4</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" name="role" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    Акне
+                                    <span class="text__count">24</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" name="role" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    Омоложение
+                                    <span class="text__count">8</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters__accordion">
+                    <input class="accordion__input" type="checkbox" id="using_md_filter" checked="">
+                    <label class="accordion__trigger" for="using_md_filter">
+                        Тип применения
+                        <img src="img/icons/select_arrow.svg" class="trigger__arrow" alt="">
+                    </label>
+
+                    <div class="accordion__content">
+                        <div class="content__container">
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" name="using" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    Профессиональное
+                                    <span class="text__count">4</span>
+                                </span>
+                            </label>
+
+                            <label class="container__label container__label-checkbox">
+                                <input type="checkbox" checked="checked" name="using" class="label__input">
+                                <span class="label__checkbox"></span>
+                                <span class="label__text">
+                                    Домашнее
+                                    <span class="text__count">24</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__products">
+                <div class="products__tags">
+                    <div class="tags__item">
+                        <span class="item__text">Бренд: CLASSYS</span>
+                        <button class="item__delete">
+                            <img src="img/icons/times.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="tags__item">
+                        <span class="item__text">Назначение: акне</span>
+                        <button class="item__delete">
+                            <img src="img/icons/times.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="list_of_items list_of_items-three list_of_items-products">
+                    <div class="list_of_items__item">
+                        <a href="/product.html" class="item__image">
+                            <img src="img/product/green_vial.png" alt="">
+                        </a>
+
+                        <div class="item__info">
+                            <a href="/product.html" class="info__title">Название продукта</a>
+
+                            <p class="info__text">Товары представлены в виде карточек-анонсов, каждый анонс содержит...</p>
+
+                            <a href="/product.html" class="info__bottom">
+                                <div class="bottom__link">Подробнее</div>
+
+                                <img src="img/icons/news_arrow.svg" class="bottom__arrow" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list_of_items__item">
+                        <a href="/product.html" class="item__image">
+                            <img src="img/product/green_vial.png" alt="">
+                        </a>
+
+                        <div class="item__info">
+                            <a href="/product.html" class="info__title">Название продукта</a>
+
+                            <p class="info__text">Товары представлены в виде карточек-анонсов, каждый анонс содержит...</p>
+
+                            <a href="/product.html" class="info__bottom">
+                                <div class="bottom__link">Подробнее</div>
+
+                                <img src="img/icons/news_arrow.svg" class="bottom__arrow" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list_of_items__item">
+                        <a href="/product.html" class="item__image">
+                            <img src="img/product/green_vial.png" alt="">
+                        </a>
+
+                        <div class="item__info">
+                            <a href="/product.html" class="info__title">Название продукта</a>
+
+                            <p class="info__text">Товары представлены в виде карточек-анонсов, каждый анонс содержит...</p>
+
+                            <a href="/product.html" class="info__bottom">
+                                <div class="bottom__link">Подробнее</div>
+
+                                <img src="img/icons/news_arrow.svg" class="bottom__arrow" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list_of_items__item">
+                        <a href="/product.html" class="item__image">
+                            <img src="img/product/green_vial.png" alt="">
+                        </a>
+
+                        <div class="item__info">
+                            <a href="/product.html" class="info__title">Название продукта</a>
+
+                            <p class="info__text">Товары представлены в виде карточек-анонсов, каждый анонс содержит...</p>
+
+                            <a href="/product.html" class="info__bottom">
+                                <div class="bottom__link">Подробнее</div>
+
+                                <img src="img/icons/news_arrow.svg" class="bottom__arrow" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list_of_items__item">
+                        <a href="/product.html" class="item__image">
+                            <img src="img/product/green_vial.png" alt="">
+                        </a>
+
+                        <div class="item__info">
+                            <a href="/product.html" class="info__title">Название продукта</a>
+
+                            <p class="info__text">Товары представлены в виде карточек-анонсов, каждый анонс содержит...</p>
+
+                            <a href="/product.html" class="info__bottom">
+                                <div class="bottom__link">Подробнее</div>
+
+                                <img src="img/icons/news_arrow.svg" class="bottom__arrow" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list_of_items__item">
+                        <a href="/product.html" class="item__image">
+                            <img src="img/product/green_vial.png" alt="">
+                        </a>
+
+                        <div class="item__info">
+                            <a href="/product.html" class="info__title">Название продукта</a>
+
+                            <p class="info__text">Товары представлены в виде карточек-анонсов, каждый анонс содержит...</p>
+
+                            <a href="/product.html" class="info__bottom">
+                                <div class="bottom__link">Подробнее</div>
+
+                                <img src="img/icons/news_arrow.svg" class="bottom__arrow" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list_of_items__item">
+                        <a href="/product.html" class="item__image">
+                            <img src="img/product/green_vial.png" alt="">
+                        </a>
+
+                        <div class="item__info">
+                            <a href="/product.html" class="info__title">Название продукта</a>
+
+                            <p class="info__text">Товары представлены в виде карточек-анонсов, каждый анонс содержит...</p>
+
+                            <a href="/product.html" class="info__bottom">
+                                <div class="bottom__link">Подробнее</div>
+
+                                <img src="img/icons/news_arrow.svg" class="bottom__arrow" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list_of_items__item">
+                        <a href="/product.html" class="item__image">
+                            <img src="img/product/green_vial.png" alt="">
+                        </a>
+
+                        <div class="item__info">
+                            <a href="/product.html" class="info__title">Название продукта</a>
+
+                            <p class="info__text">Товары представлены в виде карточек-анонсов, каждый анонс содержит...</p>
+
+                            <a href="/product.html" class="info__bottom">
+                                <div class="bottom__link">Подробнее</div>
+
+                                <img src="img/icons/news_arrow.svg" class="bottom__arrow" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list_of_items__item">
+                        <a href="/product.html" class="item__image">
+                            <img src="img/product/green_vial.png" alt="">
+                        </a>
+
+                        <div class="item__info">
+                            <a href="/product.html" class="info__title">Название продукта</a>
+
+                            <p class="info__text">Товары представлены в виде карточек-анонсов, каждый анонс содержит...</p>
+
+                            <a href="/product.html" class="info__bottom">
+                                <div class="bottom__link">Подробнее</div>
+
+                                <img src="img/icons/news_arrow.svg" class="bottom__arrow" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__bottom">
+                    <button class="button button-white bottom__button">Загрузить еще</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    @@include('components/guarantee_sec.html')
+
+    @@include('_footer.html')
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
