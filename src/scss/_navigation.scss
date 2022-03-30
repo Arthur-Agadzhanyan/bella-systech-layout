@@ -222,6 +222,10 @@
       }
     }
   
+    @media screen and (max-width: 950px) {
+      border-bottom: none;
+    }
+
     @media screen and (max-width: 650px){
       border-bottom: none;
     }
