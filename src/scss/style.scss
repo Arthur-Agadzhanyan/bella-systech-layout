@@ -20,19 +20,21 @@
 
 @import "./modals.scss";
 
-//components
+//COMPONENTS
 @import "./components/button.scss";
 @import "./components/breadcrumbs.scss";
 @import "./components/list_of_items.scss";
 @import "./components/guarantee.scss";
 @import "./components/text-with-image.scss";
 
+//SECTIONS
 @import "./course-enrollment-section.scss";
 @import "./questions-section.scss";
 
-//pages
+//PAGES
 @import './products-page.scss';
 @import './news-page.scss';
+@import './contacts-page.scss';
 
 * {
   margin: 0;

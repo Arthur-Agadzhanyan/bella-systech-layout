@@ -6,6 +6,45 @@
 <body>
     @@include('_navigation.html')
 
+    <main class="contacts-page">
+        <div class="breadcrumbs contacts-breadcrumbs-mb">
+            <a href="/" class="breadcrumbs__item">Главная</a>
+            <a href="/contacts.html" class="breadcrumbs__item breadcrumbs__item-active">Контакты</a>
+        </div>
+
+        <h1 class="page_title contacts-page_title-mb">Контакты</h1>
+
+        <div class="contacts-page__info">
+            <div class="breadcrumbs">
+                <a href="/" class="breadcrumbs__item">Главная</a>
+                <a href="/contacts.html" class="breadcrumbs__item breadcrumbs__item-active">Контакты</a>
+            </div>
+
+            <h1 class="page_title">Контакты</h1>
+
+            <div class="info__item info__phone">
+                <h2 class="item__title">Телефон</h2>
+                <p class="item__text">8 958 748 95 35</p>
+                <p class="item__text">8 637 727 83 62</p>
+            </div>
+
+            <div class="info__item">
+                <h2 class="item__title">Почта</h2>
+                <p class="item__text">hrRgjfag@gmail.com</p>
+            </div>
+
+            <div class="info__item">
+                <h2 class="item__title">Часы работы</h2>
+                <p class="item__text">пн-пт 08:00-19:00</p>
+            </div>
+
+            <img class="info__img" src="img/contacts/1.png" alt="">
+        </div>
+
+        <div class="contacts-page__map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae052f1b66d12a99655a0805b6e746be1814038a9505a4c0fe267453180ea4f11&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </main>
 
     @@include('components/questions.html')
 
