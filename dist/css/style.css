@@ -1180,6 +1180,13 @@ template {
   line-height: normal;
 }
 
+.text-with-image__info .info__title-big {
+  color: #272727;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: normal;
+}
+
 .text-with-image__info .info__text {
   padding-left: 30px;
   margin-top: 24px;
@@ -1209,7 +1216,7 @@ template {
   margin-right: auto;
 }
 
-.text-with-image__info .info__text p {
+.text-with-image__info .info__text .text__item {
   color: #272727;
   font-size: 18px;
   font-weight: 400;
@@ -2160,7 +2167,7 @@ template {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'ProximaNova',sans-serif;
+  font-family: 'ProximaNova', sans-serif;
 }
 
 html {
@@ -2173,7 +2180,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'MontserratAlternates', sans-serif;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -3225,6 +3231,45 @@ a {
   border-color: rgba(132, 132, 132, 0.23) !important;
 }
 
+.service-section {
+  margin-top: 32px;
+  padding-bottom: 78px;
+}
+
+.service-section .text__contacts {
+  font-family: 'ProximaNova', sans-serif;
+  margin-top: 20px;
+}
+
+.service-section .text__contacts .contacts__title {
+  font-family: 'ProximaNova', sans-serif;
+  color: #272727;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.service-section .text__contacts .contacts__phone {
+  font-family: 'ProximaNova', sans-serif;
+  display: block;
+  color: #272727;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.service-section .text__contacts .contacts__schedule {
+  font-family: 'ProximaNova', sans-serif;
+  display: block;
+  color: #272727;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
 @media screen and (max-width: 2000px) {
   .guarantee__content .content__list .list__item .item__info .info__title {
     color: #272727;
@@ -3732,7 +3777,7 @@ a {
     padding-left: 0px;
   }
 
-  .text-with-image__info .info__text p {
+  .text-with-image__info .info__text .text__item {
     color: #272727;
     font-size: 20px;
     font-weight: 400;
@@ -3837,6 +3882,10 @@ a {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 47%;
             flex: 0 1 47%;
+  }
+
+  .service-section {
+    background: #F1F1F1;
   }
 }
 
@@ -4442,6 +4491,10 @@ a {
   .news .content__btn .btn__arrow {
     margin-left: 10px;
   }
+
+  .service-section {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -4983,6 +5036,10 @@ a {
   .news {
     padding: 50px 0px;
   }
+
+  .service-section {
+    padding-bottom: 34px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -5189,7 +5246,7 @@ a {
     margin-top: 15px;
   }
 
-  .text-with-image__info .info__text p {
+  .text-with-image__info .info__text .text__item {
     color: #272727;
     font-size: 16px;
     font-weight: 400;
@@ -5469,6 +5526,13 @@ a {
   .benefits {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .service-section .text__contacts .contacts__title,
+  .service-section .text__contacts .contacts__phone,
+  .service-section .text__contacts .contacts__schedule {
+    font-size: 17px;
+    margin-bottom: 16px;
   }
 }
 

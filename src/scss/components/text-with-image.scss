@@ -13,6 +13,10 @@
                     display: none;
                 }
             }
+
+            &-big{
+                @include text($black,36px,300);
+            }
         }
         
         .info__text{
@@ -38,7 +42,7 @@
                 }
             }
 
-            p{
+            .text__item{
                 @include text($black,18px,400);
                 margin-bottom: 19px;
                 
@@ -47,14 +51,14 @@
             @media screen and (max-width: 1200px) {
                 padding-left: 0px;
 
-                p{
+                .text__item{
                     @include text($black,20px,400,24px);
                 }
             }
 
             @media screen and (max-width: 500px) {
                 margin-top: 15px;
-                p{
+                .text__item{
                     @include text($black,16px,400,24px);
                     margin-bottom: 15px;
                 }
