@@ -1475,6 +1475,267 @@ template {
           align-items: flex-end;
 }
 
+.questions {
+  padding: 150px 0px 190px 0px;
+  position: relative;
+  overflow: hidden;
+  background: -o-linear-gradient(182.71deg, #E11F26 4.23%, #DD408B 104.93%), #DD408B;
+  background: linear-gradient(267.29deg, #E11F26 4.23%, #DD408B 104.93%), #DD408B;
+}
+
+.questions__content {
+  max-width: 870px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.questions__content .content__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.questions__content .content__form .form__inputs {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+}
+
+.questions__content .content__form .form__textarea {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+}
+
+.questions__content .content__form .form__textarea .form__input {
+  height: 100%;
+}
+
+.questions__content .content__form .form__div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  position: relative;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.questions__content .content__form .form__div .form__input {
+  width: 100%;
+  background: transparent;
+  padding: 21px 24px;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.questions__content .content__form .form__div .form__input:not(:-moz-placeholder-shown).form__input:not(:focus) + .form__label {
+  top: 10px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.questions__content .content__form .form__div .form__input:not(:-ms-input-placeholder).form__input:not(:focus) + .form__label {
+  top: 10px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.questions__content .content__form .form__div .form__input:focus + .form__label,
+.questions__content .content__form .form__div .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+  top: 10px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.questions__content .content__form .form__div .form__input:not(:-moz-placeholder-shown) {
+  padding: 29px 24px 13px 24px;
+}
+
+.questions__content .content__form .form__div .form__input:not(:-ms-input-placeholder) {
+  padding: 29px 24px 13px 24px;
+}
+
+.questions__content .content__form .form__div .form__input:focus,
+.questions__content .content__form .form__div .form__input:not(:placeholder-shown) {
+  padding: 29px 24px 13px 24px;
+}
+
+.questions__content .content__form .form__div .form__label {
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  position: absolute;
+  left: 24px;
+  top: 21px;
+  z-index: 1;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.questions__content .content__form .form__check_item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48.5%;
+          flex: 0 1 48.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+  margin-left: auto;
+  text-align: left;
+}
+
+.questions__content .content__form .form__check_item .item__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.questions__content .content__form .form__check_item .item__check .check__input {
+  display: none;
+}
+
+.questions__content .content__form .form__check_item .item__check .check__custom {
+  position: relative;
+  display: block;
+  min-width: 22px;
+  min-height: 22px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid #fff;
+  -webkit-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+}
+
+.questions__content .content__form .form__check_item .item__check .check__custom:before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 15px;
+  height: 11px;
+  background: url("../img/icons/checked.svg") no-repeat center;
+  -webkit-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+}
+
+.questions__content .content__form .form__check_item .item__check .check__input:checked + .check__custom {
+  background: white;
+}
+
+.questions__content .content__form .form__check_item .item__check .check__input:checked + .check__custom:before {
+  opacity: 1;
+}
+
+.questions__content .content__form .form__check_item .item__check .check__text {
+  margin-left: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+}
+
+.questions__content .content__form .form__bottom {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.questions__content .content__form .form__bottom .form__btn {
+  margin-bottom: 24px;
+  border: 1px solid #fff !important;
+  padding: 21px 105px;
+}
+
+.questions__content .content__form .form__bottom .form__btn:hover {
+  border: 1px solid #000 !important;
+}
+
+.questions__content .content__title {
+  color: #fff;
+}
+
+.questions__content .content__text {
+  font-family: Garamond;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+.questions__content .content__form_block {
+  margin-top: 40px;
+}
+
+.questions .enrollment__pixels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.questions .enrollment__pixels img {
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.questions .top__pixels {
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.questions .bottom__pixels {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .products-page .page_title-md {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4335,6 +4596,22 @@ a {
     margin-bottom: -80px;
   }
 
+  .questions__content {
+    max-width: 700px;
+  }
+
+  .questions .top__pixels {
+    margin-left: -450px;
+  }
+
+  .questions .top__pixels img:first-child {
+    display: none;
+  }
+
+  .questions .bottom__pixels {
+    margin-bottom: -80px;
+  }
+
   .devices__item .item__info {
     text-align: center;
   }
@@ -4549,6 +4826,14 @@ a {
     max-width: 600px;
   }
 
+  .questions__content .content__title {
+    font-size: 36px;
+  }
+
+  .questions__content {
+    max-width: 600px;
+  }
+
   .manufacturers__list .list__item .item__top .top__image {
     max-width: 80%;
     display: block;
@@ -4650,6 +4935,18 @@ a {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+
+  .questions__content .content__form .form__inputs,
+  .questions__content .content__form .form__textarea {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0px 16px;
+  }
+
+  .questions__content .content__form .form__div .form__label {
+    font-weight: 300 !important;
   }
 
   .products-page .products__content {
@@ -4862,6 +5159,10 @@ a {
   }
 
   .enrollment .top__pixels {
+    left: -300px;
+  }
+
+  .questions .top__pixels {
     left: -300px;
   }
 
@@ -5277,6 +5578,59 @@ a {
   }
 
   .enrollment__content {
+    max-width: 450px;
+    padding: 0px 16px;
+  }
+
+  .questions__content .content__form .form__inputs,
+  .questions__content .content__form .form__textarea {
+    padding: 0px;
+  }
+
+  .questions__content .content__form .form__check_item .item__check .check__text {
+    font-size: 10px;
+    margin-left: 3px;
+  }
+
+  .questions__content .content__form .form__check_item .item__check .check__custom {
+    margin-left: 10px;
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+
+  .questions__content .content__form .form__bottom {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .questions__content .content__form .form__bottom .form__btn {
+    padding: 21px 44px;
+  }
+
+  .questions__content .content__title {
+    font-size: 32px;
+  }
+
+  .questions__content .content__text {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+  .questions .top__pixels {
+    top: -100px;
+    left: -500px;
+  }
+
+  .questions .bottom__pixels {
+    left: -100px;
+  }
+
+  .questions {
+    padding: 70px 0px;
+  }
+
+  .questions__content {
     max-width: 450px;
     padding: 0px 16px;
   }
@@ -5744,6 +6098,11 @@ a {
   }
 
   .enrollment .bottom__pixels {
+    left: -370px;
+    bottom: -20px;
+  }
+
+  .questions .bottom__pixels {
     left: -370px;
     bottom: -20px;
   }

@@ -28,6 +28,7 @@
 @import "./components/text-with-image.scss";
 
 @import "./course-enrollment-section.scss";
+@import "./questions-section.scss";
 
 //pages
 @import './products-page.scss';
@@ -2172,8 +2173,6 @@ a {
   margin-top: 32px;
   padding-bottom: 78px;
 
-  
-
   .text__contacts{
     font-family: 'ProximaNova', sans-serif;
     margin-top: 20px;
@@ -2206,7 +2205,7 @@ a {
       }
     }
   }
-  
+
   @media screen and (max-width: 1200px) {
     background: #F1F1F1;
   }
