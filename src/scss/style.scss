@@ -24,6 +24,8 @@
 @import "./components/breadcrumbs.scss";
 @import "./components/list_of_items.scss";
 @import "./components/guarantee.scss";
+@import "./components/text-with-image.scss";
+
 @import "./course-enrollment-section.scss";
 
 //pages
@@ -91,6 +93,34 @@ a{
   span{
     @include text($black,14px,300,100%);
     margin-left: -2px;
+  }
+
+  &-md{
+    display: flex;
+    @media screen and (max-width:600px) {
+        display: none;
+    }
+  }
+
+  &-mb{
+      display: none;
+      @media screen and (max-width:600px) {
+          display: flex;
+      }
+  }
+
+  &-mb-one-news{
+    display: none;
+    @media screen and (max-width: 1200px) {
+        display: flex;
+    }
+    @media screen and (max-width: 500px) {
+      margin-top: 5px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    @include text($black,32px,300,100%);
   }
 }
 

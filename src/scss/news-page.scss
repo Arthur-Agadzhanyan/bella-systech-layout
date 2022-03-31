@@ -1,4 +1,19 @@
 .news-page {
+
+    .news{
+        padding: 0;
+        padding-top: 38px;
+
+        .news__title{
+            @include text($black,36px,300)
+        }
+
+        .news__content{
+            .content__list{
+                margin-top: 32px;
+            }
+        }
+    }
     
     .page__list {
         display: flex;
@@ -154,5 +169,20 @@
         &:hover{
             background: darken(#fff,10%);
         }
+    }
+
+    .one-news{
+        margin-top: 32px;
+        padding-bottom: 46px;
+        border-bottom: 1px solid #F1F1F1;
+
+        @media screen and (max-width: 1200px) {
+            background: #F1F1F1;
+        }
+
+        @media screen and (max-width: 800px) {
+            margin-top: 20px;
+        }
+        
     }
 }
