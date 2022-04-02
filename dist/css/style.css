@@ -2277,6 +2277,208 @@ template {
   right: 0%;
 }
 
+.one-product__intro {
+  padding-top: 12px;
+}
+
+.one-product__intro .intro__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.one-product__intro .intro__content .content__info {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+  padding-left: 40px;
+  padding-bottom: 148px;
+  overflow: hidden;
+}
+
+.one-product__intro .intro__content .content__info .info__logo {
+  max-width: 140px;
+  margin-bottom: 35px;
+}
+
+.one-product__intro .intro__content .content__info .info__logo img {
+  width: 100%;
+}
+
+.one-product__intro .intro__content .content__info .info__suptitle {
+  color: #272727;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.one-product__intro .intro__content .content__info .info__title {
+  color: #272727;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 35px;
+}
+
+.one-product__intro .intro__content .content__info .info__block {
+  padding-left: 50px;
+}
+
+.one-product__intro .intro__content .content__info .info__block .block__text {
+  font-family: Garamond;
+  color: #272727;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 450px;
+  margin-bottom: 50px;
+}
+
+.one-product__intro .intro__content .content__info .info__block .block__btn {
+  padding: 21px 65px;
+  font-size: 18px;
+}
+
+.one-product__intro .intro__content .content__info .info__grey {
+  width: 200%;
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  min-height: 72%;
+  z-index: -1;
+  background: #F1F1F1;
+}
+
+.one-product__intro .intro__content .content__video {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 55%;
+          flex: 0 1 55%;
+}
+
+.one-product__intro .intro__content .content__video img {
+  display: block;
+  max-width: 100%;
+  min-height: 637px;
+}
+
+.one-product__about {
+  position: relative;
+  padding-top: 98px;
+  padding-bottom: 147px;
+}
+
+.one-product__about .about__content {
+  padding: 0px 16px;
+  max-width: 1330px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.one-product__about .about__content .content__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.one-product__about .about__content .content__info .info__title {
+  color: #272727;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.one-product__about .about__content .content__info .info__block {
+  padding-left: 40px;
+}
+
+.one-product__about .about__content .content__info .info__block .block__text {
+  font-family: Garamond;
+  color: #272727;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 27px;
+}
+
+.one-product__about .about__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: 64%;
+  z-index: -1;
+  display: block;
+}
+
+.one-product__wavelength {
+  background: -o-linear-gradient(182.71deg, #E11F26 4.23%, #DD408B 104.93%), #DD408B;
+  background: linear-gradient(267.29deg, #E11F26 4.23%, #DD408B 104.93%), #DD408B;
+}
+
+.one-product__wavelength .wavelength__content {
+  padding-top: 121px;
+  padding-bottom: 78px;
+}
+
+.one-product__wavelength .wavelength__content .section_title {
+  color: #fff;
+  text-align: left;
+}
+
+.one-product__wavelength .wavelength__content .content__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 54px;
+}
+
+.one-product__wavelength .wavelength__content .content__info .info__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 49%;
+          flex: 0 1 49%;
+}
+
+.one-product__wavelength .wavelength__content .content__info .info__image img {
+  max-width: 100%;
+}
+
+.one-product__wavelength .wavelength__content .content__info .info__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 49%;
+          flex: 0 1 49%;
+}
+
+.one-product__wavelength .wavelength__content .content__info .info__text .text__rhombus {
+  margin: 22px 0px;
+}
+
+.one-product__wavelength .wavelength__content .content__info .info__text .text__item {
+  font-family: Garamond;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.one-product__skincare {
+  padding-top: 124px;
+  padding-bottom: 80px;
+}
+
 .news-page .news {
   padding: 0;
   padding-top: 38px;

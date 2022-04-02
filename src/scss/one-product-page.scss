@@ -1,0 +1,162 @@
+.one-product{
+    &__intro{
+        padding-top: 12px;
+
+        .intro__content{
+            display: flex;
+            align-items: flex-start;
+
+            .content__info {
+                position: relative;
+                flex: 0 1 45%;
+                padding-left: 40px;
+                padding-bottom: 148px;
+                overflow: hidden;
+    
+                .info__logo{
+                    max-width: 140px;
+                    margin-bottom: 35px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .info__suptitle{
+                    @include text($black,48px,300);
+                }
+                .info__title{
+                    @include text($black,64px,400);
+                    margin-bottom: 35px;
+                }
+    
+                .info__block{
+                    padding-left: 50px;
+                    .block__text{
+                        font-family: Garamond;
+                        @include text($black,24px,400);
+                        max-width: 450px;
+                        margin-bottom: 50px;
+                    }
+
+                    .block__btn{
+                        padding: 21px 65px;
+                        font-size: 18px;
+                    }
+                }
+
+                .info__grey{
+                    width: 200%;
+                    position: absolute;
+                    bottom: 0;
+                    left: -40px;;
+                    min-height: 72%;
+                    z-index: -1;
+
+                    background: #F1F1F1;
+                }
+            }
+    
+            .content__video {
+                flex: 0 1 55%;
+                
+
+                img{
+                    display: block;
+                    max-width: 100%;
+                    min-height: 637px;
+                }
+            }
+        }
+        
+    }
+
+    &__about{
+        position: relative;
+        padding-top: 98px;
+        padding-bottom: 147px;
+
+        .about__content{
+            padding: 0px 16px;
+            
+            max-width: 1330px;
+            margin: 0 auto;
+            margin-top: 40px;
+
+            display: flex;
+            
+
+            .content__info{
+                flex: 0 1 50%;
+
+                .info__title{
+                    @include text($black,32px,300);
+                    margin-bottom: 24px;
+                }
+
+                .info__block{
+                    padding-left: 40px;
+                    .block__text{
+                        font-family: Garamond;
+                        @include text($black,20px,400);
+                        margin-bottom: 27px;
+                    }
+                }
+                
+            }
+        }
+
+        .about__img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            max-width: 64%;
+            z-index: -1;
+            display: block;
+        }
+    }
+
+    &__wavelength{
+        background: linear-gradient(267.29deg, #E11F26 4.23%, #DD408B 104.93%), #DD408B;
+
+        .wavelength__content{
+            padding-top: 121px;
+            padding-bottom: 78px;
+            
+            .section_title{
+                color: #fff;
+                text-align: left;
+            }
+
+            .content__info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 54px;
+
+                .info__image {
+                    flex: 0 1 49%;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+
+                .info__text {
+                    flex: 0 1 49%;
+                    .text__rhombus{
+                        margin: 22px 0px;
+                    }
+                    .text__item{
+                        font-family: Garamond;
+                        @include text(#fff,32px,400);
+                    }
+                }
+                
+            }
+        }
+    }
+
+    &__skincare{
+        padding-top: 124px;
+        padding-bottom: 80px;
+    }
+}
