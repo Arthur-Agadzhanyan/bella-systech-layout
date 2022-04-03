@@ -3,4 +3,5 @@
 @@include('navbar.js');
 @@include('main_page.js');
 @@include('products_page.js');
+@@include('one-product.js');
 
