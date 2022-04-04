@@ -94,10 +94,36 @@
 
                 .info__block{
                     padding-left: 40px;
+
                     .block__text{
                         font-family: Garamond;
                         @include text($black,20px,400);
                         margin-bottom: 27px;
+                    }
+                    .block__buttons{
+                        display: flex;
+
+
+                        .buttons__item{
+                            display: flex;
+                            align-items: center;
+                            padding: 15px 24px;
+
+                            border: 1px solid #F1F1F1;
+
+                            color: $black;
+                            font-weight: 700;
+                            margin-right: 18px;
+                            transition: all .2s linear;
+
+                            img{
+                                margin-right: 15px;
+                            }
+
+                            &:hover{
+                                background: rgba(241, 241, 241,.6);
+                            }
+                        }
                     }
                 }
                 
