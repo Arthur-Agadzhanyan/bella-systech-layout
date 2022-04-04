@@ -284,6 +284,154 @@
         }
     }
 
+    &__usage{
+        padding: 124px 0px 92px 0px;
+        .usage__content {
+            .content__text {
+
+                display: block;
+                max-width: 872px;
+                text-align: center;
+
+                margin: 0 auto;
+                margin-top: 32px;
+                margin-bottom: 69px;
+                font-family: Garamond;
+                @include text($black,24px,400);
+
+                a{
+                    font-family: Garamond;
+                    color: #DD408B;
+                }
+            }
+
+            .content__list {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-between;
+                .list__item {
+                    flex: 0 1 17.5%;
+                    display: flex;
+                    margin-bottom: 60px;
+
+                    .item__img{
+                        display: block;
+                        
+                        img{
+                            width: 17px;
+                            margin-right: 12px;
+                            margin-bottom: -7px;
+                        }
+                    }
+                    
+                    .item__info{
+                        .info__text{
+                            flex: 0 1 100%;
+                            margin-left: 23px;
+                            padding-top: 12px;
+                            font-family: Garamond;
+                            @include text($black,20px,400);
+                        }
+                    }
+
+                    .item__title {
+                        font-family: Garamond;
+                        @include text($black,24px,400);
+                    };
+                }
+            }
+            
+        }
+    }
+
+    &__procedure {
+        background: #F1F1F1;
+        padding: 124px 0px 40px 0px;
+        .procedure__block{
+            padding-top: 45px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 85px;
+
+            .block__item{
+                position: relative;
+                flex: 0 1 23%;
+
+                .item__media{
+                    position: relative;
+                    margin-bottom: 22px;
+                }
+
+                .item__text{
+                    @include text($black,20px,300)
+                }
+
+                .item__over-img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 2;
+                    background: linear-gradient(267.29deg, rgba(225, 31, 38, 0.5) 4.23%, rgba(221, 64, 139, 0.5) 104.93%);;
+                }
+
+                .item__img {
+                    max-width: 100%;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    
+    &__reviews{
+        background: #F1F1F1;
+        padding: 124px 0px;
+
+        .reviews__content{
+            .content__list{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 53px;
+
+                .list__item {
+                    flex: 0 1 32%;
+                    background: #fff;
+                    padding: 24px;
+                    .item__head {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 16px;
+                        .head__image {  
+                            margin-right: 20px;
+                        }
+                        .head__info {
+                            .info__name {
+                                @include text($black,18px,400);
+                                margin-bottom: 4px;
+                            }
+                            .info__position {
+                                @include text($black,14px,700);
+                            }
+                        }
+                    }
+                    .item__text {
+                        p{
+                            font-family: Garamond;
+                            margin-bottom: 20px;
+                            @include text($black,18px,400)
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
     &__skincare{
         padding-top: 124px;
         padding-bottom: 80px;
