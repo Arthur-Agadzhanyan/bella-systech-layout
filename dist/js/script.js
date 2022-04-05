@@ -112,6 +112,7 @@ productsPageFiltersBtns.forEach(btn=>{
         document.body.classList.toggle('overf_hidden')
     })
 });
+//BENEFITS
 const oneProductBigSlider = new Swiper('#one_product_page-big_slider',{
     slidesPerView: 1,
     loop: true,
@@ -145,5 +146,46 @@ oneProductBigSlider.on('slideChangeTransitionEnd', function() {
     let currentSlide = oneProductBigSlider.slides[index_currentSlide]
     oneProductSmallSlider.slideTo(index_currentSlide, 1000, false);
 });
-;
+
+//EFFECT
+
+const oneProductEffectSlider = new Swiper('#one_page-effect_slider',{
+    slidesPerView: 2,
+    spaceBetween: 40,
+    slidesPerGroup: 2,
+    speed: 1200,
+    loop: true,
+    navigation:{
+        nextEl: "#one_page-effect_slider-next",
+        prevEl: "#one_page-effect_slider-prev",
+    },
+})
+
+//Other devices
+
+const oneProductOtherDevicesMbSlider = new Swiper('#one-product-other_devices_mb_slider', {
+    slidesPerView: 1,
+    loop: true,
+    loopedSlides: 1,
+    autoHeight: true,
+    speed: 1300,
+    autoplay: {
+        delay: 2500
+    },
+    pagination: {
+        clickable: true,
+        type: 'bullets',
+        el: '#main_page-news_slider_pagination',
+        bulletElement: 'div',
+        bulletClass: 'pagination__item',
+        bulletActiveClass: 'pagination__item_active',
+        renderBullet: function (index, className) {
+            return '<div class="' + className + '">*</div>';
+        }
+    },
+    navigation: {
+        prevEl: '#other_devices_slider_arrow_left',
+        nextEl: '#other_devices_slider_arrow_right'
+    }
+});
 
