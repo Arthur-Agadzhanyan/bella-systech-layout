@@ -64,10 +64,34 @@
                 flex: 0 1 55%;
 
 
-                img {
+                .video-js {
                     display: block;
-                    max-width: 100%;
+                    width: 100%;
                     min-height: 637px;
+                    cursor: pointer;
+
+                    .vjs-poster{
+                        background-size: 110% 100%;
+                    }
+
+                    .vjs-big-play-button{
+                        background: transparent;
+                        max-height: 72px;
+                        border: none;
+
+                        top:50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        .vjs-icon-placeholder{
+                            border: none;
+                        }
+                        .vjs-icon-placeholder::before{
+                            border: none;
+                            max-height: 72px;
+                            content: url('../img/icons/play_circle_filled.svg');
+                            background:  transparent;
+                        }
+                    }
                 }
             }
         }
@@ -402,6 +426,42 @@
                 position: relative;
                 flex: 0 1 23%;
 
+                .video-js {
+                    display: block;
+                    width: 100%;
+                    min-height: 254px;
+                    
+                    
+                    cursor: pointer;
+
+                    video{
+                        // height: auto;
+                    }
+
+                    .vjs-poster{
+                        background-size: 110% 100%;
+                    }
+
+                    .vjs-big-play-button{
+                        background: transparent;
+                        max-height: 72px;
+                        border: none;
+
+                        top:50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        .vjs-icon-placeholder{
+                            border: none;
+                        }
+                        .vjs-icon-placeholder::before{
+                            border: none;
+                            max-height: 72px;
+                            content: url('../img/icons/play_circle_filled.svg');
+                            background:  transparent;
+                        }
+                    }
+                }
+
                 .item__media {
                     position: relative;
                     margin-bottom: 22px;
@@ -429,6 +489,12 @@
                         width: 100%;
                         display: block;
                     }
+                }
+
+                .item__video{
+                    width: 100%;
+                    height: auto;
+                    flex-grow: 1;
                 }
             }
         }
@@ -655,6 +721,55 @@
             }
             @media screen and (max-width: 1000px) {
                 flex-wrap: wrap;
+            }
+        }
+
+        .skincare__button{
+            border: 1px solid #848484;
+            padding: 21px 76px;
+            
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__buying_get{
+        background: #F1F1F1;
+        padding: 124px 0px 84px 0px;
+
+        .buying_get__content{
+            .content__title{
+                max-width: 770px;
+                margin: 0 auto;
+
+                a{
+                    color: #DD408B;
+                }
+            }
+
+            .content__list{
+                margin-top: 48px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .list__item{
+                    flex: 0 1 24%;
+                    background: #fff;
+                    padding: 20px 25px;
+                    margin-bottom: 40px;
+
+                    
+                    .item__image {
+                        margin-bottom: 14px;
+                        img{
+                            display: block;
+                        }
+                    }
+                    .item__text {
+                        @include text($black,24px,300,100%)
+                    }
+                }
             }
         }
     }

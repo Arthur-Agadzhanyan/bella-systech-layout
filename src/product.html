@@ -6,14 +6,12 @@
 <body>
     @@include('_navigation.html')
 
-
     <main class="one-product">
         <div class="container">
             <div class="breadcrumbs">
                 <a href="/" class="breadcrumbs__item">Главная</a>
                 <a href="/catalog.html" class="breadcrumbs__item">Каталог</a>
-                <a href="/one-product.html" class="breadcrumbs__item breadcrumbs__item-active">Неодимовый лазер
-                    Spectra</a>
+                <a href="/one-product.html" class="breadcrumbs__item breadcrumbs__item-active">Неодимовый лазер Spectra</a>
             </div>
         </div>
 
@@ -39,7 +37,17 @@
                     </div>
 
                     <div class="content__video">
-                        <img src="img/service/1.png" alt="">
+                        <video
+                            id="my-video"
+                            width="100%"
+                            class="video-js"
+                            controls
+                            preload="auto"
+                            poster="img/product/intro/preview.png"
+                            data-setup="{}"
+                        >
+                            <source src="img/video/lorem.mp4" type="video/mp4"/>
+                        </video>
                     </div>
                 </div>
             </div>
@@ -389,9 +397,19 @@
                 <div class="procedure__block procedure__videos">
                     <div class="block__item">
                         <div class="item__media">
-                            <div class="item__over-img"></div>
-                            <div class="item__img">
-                                <img src="img/product/procedure/1.png" alt="">
+                            <div class="item__video">
+                                <video
+                                    id="my-video_2"
+                                    width="100%"
+                                    height="100%"
+                                    class="video-js"
+                                    controls
+                                    preload="auto"
+                                    poster="img/product/procedure/2.png"
+                                    data-setup="{}"
+                                >
+                                    <source src="img/video/lorem.mp4" type="video/mp4"/>
+                                </video>
                             </div>
                         </div>
                         <p class="item__text">Аппарат ACTION 3</p>
@@ -399,9 +417,19 @@
 
                     <div class="block__item">
                         <div class="item__media">
-                            <div class="item__over-img"></div>
-                            <div class="item__img">
-                                <img src="img/product/procedure/1.png" alt="">
+                            <div class="item__video">
+                                <video
+                                    id="my-video_3"
+                                    width="100%"
+                                    height="100%"
+                                    class="video-js"
+                                    controls
+                                    preload="auto"
+                                    poster="img/product/procedure/2.png"
+                                    data-setup="{}"
+                                >
+                                    <source src="img/video/lorem.mp4" type="video/mp4"/>
+                                </video>
                             </div>
                         </div>
                         <p class="item__text">Аппарат ACTION 3</p>
@@ -409,9 +437,19 @@
 
                     <div class="block__item">
                         <div class="item__media">
-                            <div class="item__over-img"></div>
-                            <div class="item__img">
-                                <img src="img/product/procedure/1.png" alt="">
+                            <div class="item__video">
+                                <video
+                                    id="my-video_4"
+                                    width="100%"
+                                    height="100%"
+                                    class="video-js"
+                                    controls
+                                    preload="auto"
+                                    poster="img/product/procedure/2.png"
+                                    data-setup="{}"
+                                >
+                                    <source src="img/video/lorem.mp4" type="video/mp4"/>
+                                </video>
                             </div>
                         </div>
                         <p class="item__text">Аппарат ACTION 3</p>
@@ -419,9 +457,19 @@
 
                     <div class="block__item">
                         <div class="item__media">
-                            <div class="item__over-img"></div>
-                            <div class="item__img">
-                                <img src="img/product/procedure/1.png" alt="">
+                            <div class="item__video">
+                                <video
+                                    id="my-video_5"
+                                    width="100%"
+                                    height="100%"
+                                    class="video-js"
+                                    controls
+                                    preload="auto"
+                                    poster="img/product/procedure/2.png"
+                                    data-setup="{}"
+                                >
+                                    <source src="img/video/lorem.mp4" type="video/mp4"/>
+                                </video>
                             </div>
                         </div>
                         <p class="item__text">Аппарат ACTION 3</p>
@@ -1026,6 +1074,91 @@
                         </div>
                     </div>
                 </div>
+
+                <a href="/catalog.html"><button class="skincare__button button button-white">В каталог</button></a>
+            </div>
+        </section>
+        <section class="one-product__buying_get">
+            <div class="container">
+                <div class="buying_get__content">
+                    <h2 class="content__title section_title">
+                        Покупая лазер Spectra в компании <a href="/">Bella-systech</a>, вы получаете:
+                    </h2>
+
+                    <div class="content__list">
+                        <div class="list__item">
+                            <div class="item__image">
+                                <img src="img/icons/education.svg" alt="">
+                            </div>
+                            <p class="item__text">
+                                Бесплатное обучение ваших врачей работе на аппарате
+                            </p>
+                        </div>
+
+                        <div class="list__item">
+                            <div class="item__image">
+                                <img src="img/icons/guarantee.svg" alt="">
+                            </div>
+                            <p class="item__text">
+                                Гарантию производителя
+                            </p>
+                        </div>
+
+                        <div class="list__item">
+                            <div class="item__image">
+                                <img src="img/icons/guide.svg" alt="">
+                            </div>
+                            <p class="item__text">
+                                Руководство для врачей на русском языке
+                            </p>
+                        </div>
+
+                        <div class="list__item">
+                            <div class="item__image">
+                                <img src="img/icons/protocols.svg" alt="">
+                            </div>
+                            <p class="item__text">
+                                Подробные протоколы процедур на русском языке
+                            </p>
+                        </div>
+
+                        <div class="list__item">
+                            <div class="item__image">
+                                <img src="img/icons/info.svg" alt="">
+                            </div>
+                            <p class="item__text">
+                                Доступ к обучающим материалам, вебинарам, презентациям
+                            </p>
+                        </div>
+
+                        <div class="list__item">
+                            <div class="item__image">
+                                <img src="img/icons/support.svg" alt="">
+                            </div>
+                            <p class="item__text">
+                                Сервисную и техническую поддержку
+                            </p>
+                        </div>
+
+                        <div class="list__item">
+                            <div class="item__image">
+                                <img src="img/icons/teh_service.svg" alt="">
+                            </div>
+                            <p class="item__text">
+                                Послегарантийное<br> обслуживание
+                            </p>
+                        </div>
+
+                        <div class="list__item">
+                            <div class="item__image">
+                                <img src="img/icons/analysis.svg" alt="">
+                            </div>
+                            <p class="item__text">
+                                Маркетинговую поддержку
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -1041,6 +1174,7 @@
                     <div class="list_of_items__item">
                         <a href="/product.html" class="item__image">
                             <img src="img/product/publications/1.png" alt="">
+                            <div class="item__date">июнь 2019</div>
                         </a>
 
                         <div class="item__info">
@@ -1060,6 +1194,7 @@
                     <div class="list_of_items__item">
                         <a href="/product.html" class="item__image">
                             <img src="img/product/publications/1.png" alt="">
+                            <div class="item__date">июнь 2019</div>
                         </a>
 
                         <div class="item__info">
@@ -1079,6 +1214,7 @@
                     <div class="list_of_items__item">
                         <a href="/product.html" class="item__image">
                             <img src="img/product/publications/1.png" alt="">
+                            <div class="item__date">июнь 2019</div>
                         </a>
 
                         <div class="item__info">
@@ -1098,6 +1234,7 @@
                     <div class="list_of_items__item">
                         <a href="/product.html" class="item__image">
                             <img src="img/product/publications/1.png" alt="">
+                            <div class="item__date">июнь 2019</div>
                         </a>
 
                         <div class="item__info">
@@ -1124,6 +1261,7 @@
                         <div class="list_of_items__item">
                             <a href="/product.html" class="item__image">
                                 <img src="img/product/publications/1.png" alt="">
+                                <div class="item__date">июнь 2019</div>
                             </a>
     
                             <div class="item__info">
@@ -1143,26 +1281,7 @@
                         <div class="list_of_items__item">
                             <a href="/product.html" class="item__image">
                                 <img src="img/product/publications/1.png" alt="">
-                            </a>
-    
-                            <div class="item__info">
-                                <a href="/product.html" class="info__title">В лучших традициях</a>
-    
-                                <p class="info__text">Журнал «Красота и здоровье», июнь 2019</p>
-    
-                                <a href="/product.html" class="info__bottom">
-                                    <div class="bottom__link">Подробнее</div>
-    
-                                    <img src="img/icons/news_arrow.svg" class="bottom__arrow" alt="">
-                                </a>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="list_slider__slide swiper-slide">
-                        <div class="list_of_items__item">
-                            <a href="/product.html" class="item__image">
-                                <img src="img/product/publications/1.png" alt="">
+                                <div class="item__date">июнь 2019</div>
                             </a>
     
                             <div class="item__info">
@@ -1183,6 +1302,28 @@
                         <div class="list_of_items__item">
                             <a href="/product.html" class="item__image">
                                 <img src="img/product/publications/1.png" alt="">
+                                <div class="item__date">июнь 2019</div>
+                            </a>
+    
+                            <div class="item__info">
+                                <a href="/product.html" class="info__title">В лучших традициях</a>
+    
+                                <p class="info__text">Журнал «Красота и здоровье», июнь 2019</p>
+    
+                                <a href="/product.html" class="info__bottom">
+                                    <div class="bottom__link">Подробнее</div>
+    
+                                    <img src="img/icons/news_arrow.svg" class="bottom__arrow" alt="">
+                                </a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="list_slider__slide swiper-slide">
+                        <div class="list_of_items__item">
+                            <a href="/product.html" class="item__image">
+                                <img src="img/product/publications/1.png" alt="">
+                                <div class="item__date">июнь 2019</div>
                             </a>
     
                             <div class="item__info">

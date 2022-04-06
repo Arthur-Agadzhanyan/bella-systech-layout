@@ -8,6 +8,7 @@
     &__item{
         background: $grey_1;
         .item__image{
+            position: relative;
             display: block;
             overflow: hidden;
             img{
@@ -23,6 +24,18 @@
             }
         }
 
+        .item__date{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+
+            font-family: Garamond, sans-serif;
+            @include text(#fff,14px,400);
+            background: #4F4F4F;
+            padding: 5px 12px;
+        }
+
         .item__info{
             padding: 24px;
 
@@ -36,6 +49,8 @@
                     @include text($black,14px,400,100%);
                 }
             }
+
+            
 
             .info__text{
                 font-family: "Garamond";
@@ -112,6 +127,10 @@
             @media screen and (max-width: 500px) {
                 padding-top: 12px;
             }
+        }
+
+        &-news{
+            background: #f1f1f1;
         }
     }
 

@@ -4,4 +4,4 @@
 @@include('main_page.js');
 @@include('products_page.js');
 @@include('one-product.js');
-
+@@include('video.min.js')
