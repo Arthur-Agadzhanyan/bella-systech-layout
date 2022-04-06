@@ -1,5 +1,6 @@
 .one-product {
     &__intro {
+        position: relative;
         padding-top: 12px;
 
         .intro__content {
@@ -20,15 +21,65 @@
                     img {
                         width: 100%;
                     }
+
+                    @media screen and (max-width: 1300px) {
+                        margin-bottom: 15px;
+                    }
+
+                    @media screen and (max-width: 1000px) {
+                        position: absolute;
+                        top: -14px;
+                    }
+                    @media screen and (max-width: 800px)  {
+                        left: 42px;
+                    }
                 }
 
                 .info__suptitle {
                     @include text($black, 48px, 300);
+
+                    @media screen and (max-width: 1500px) {
+                        @include text($black, 38px, 300);
+                    }
+                    @media screen and (max-width: 1200px) {
+                        @include text($black, 28px, 300);
+                    }
+                    @media screen and (max-width: 1000px) {
+                        @include text($black, 48px, 300);
+                    }
+                    @media screen and (max-width: 600px) {
+                        @include text($black, 38px, 300); 
+                    }
+                    @media screen and (max-width: 500px) {
+                        @include text($black, 28px, 300); 
+                    }
+                    @media screen and (max-width: 400px) {
+                        @include text($black, 24px, 300); 
+                    }
                 }
 
                 .info__title {
                     @include text($black, 64px, 400);
                     margin-bottom: 35px;
+
+                    @media screen and (max-width: 1200px) {
+                        @include text($black, 54px, 400);
+                    }
+                    @media screen and (max-width: 1000px) {
+                        @include text($black, 64px, 400);
+                        margin-bottom: 35px;
+                    }
+                    @media screen and (max-width: 600px) {
+                        @include text($black, 54px, 700); 
+                        margin-bottom: 16px;
+                    }
+                    @media screen and (max-width: 500px) {
+                        margin-top: 8px;
+                        @include text($black, 36px, 700); 
+                    }
+                    @media screen and (max-width: 400px) {
+                        @include text($black, 32px, 600); 
+                    }
                 }
 
                 .info__block {
@@ -45,6 +96,57 @@
                         padding: 21px 65px;
                         font-size: 18px;
                     }
+
+                    @media screen and (max-width: 1200px) {
+                        padding-left: 10px;
+
+                        .block__text{
+                            @include text($black, 21px, 400);
+                        }
+
+                        .block__btn{
+                            padding: 17px 48px;
+                        }
+                    }
+
+                    @media screen and (max-width: 1000px) {
+                        .block__text{
+                            max-width: 600px;
+                            @include text($black, 24px, 400);
+                        }
+                        .block__btn{
+                            padding: 21px 65px;
+                        }
+                    }
+
+                    @media screen and (max-width: 800px)  {
+                        padding-left: 0px;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        .block__text{
+                            max-width: 600px;
+                            @include text($black, 24px, 400);
+                        }
+                        .block__btn{
+                            padding: 20px 65px;
+                            display: block;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        .block__text{
+                            margin-bottom: 40px;
+                            @include text($black, 20px, 400);
+                        }
+                        .block__btn{
+                            font-weight: 300;
+                            padding: 13px 43px;
+                            display: block;
+                            margin: 0 auto;
+                        }
+                    }
                 }
 
                 .info__grey {
@@ -57,21 +159,52 @@
                     z-index: -1;
 
                     background: #F1F1F1;
+
+                    @media screen and (max-width: 1500px) {
+                        min-height: 57%;
+                        bottom: 16%;
+                    }
+                    @media screen and (max-width: 1000px) {
+                        display: none;
+                    }
+                }
+
+                @media screen and (max-height: 800px) and (min-width: 1200px) {
+                    padding-bottom: 90px;
+                }
+
+                @media screen and (max-width: 1000px) {
+                    order: 2;
+                    position: static;
+                    flex: 0 1 100%;
+                    padding-bottom: 100px;
+                }
+
+                @media screen and (max-width: 800px)  {
+                    padding-left: 0px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    padding-bottom: 50px;
                 }
             }
 
             .content__video {
                 flex: 0 1 55%;
-
-
+                
                 .video-js {
                     display: block;
                     width: 100%;
-                    min-height: 637px;
+                    min-height: 70vh;
                     cursor: pointer;
 
+                    video{
+                        display: block;
+                    }
+
                     .vjs-poster{
-                        background-size: 110% 100%;
+                        background-position: center;
+                        background-size:cover;
                     }
 
                     .vjs-big-play-button{
@@ -90,12 +223,53 @@
                             max-height: 72px;
                             content: url('../img/icons/play_circle_filled.svg');
                             background:  transparent;
+
+                            @media screen and (max-width: 400px) {
+                                transform: scale(.5);
+                            }
                         }
                     }
+
+                    @media screen and (max-width: 1650px) {
+                        min-height: 72vh;
+                    }
+
+                    @media screen and (max-width: 1500px) {
+                        min-height: 65vh;
+                    }
+
+                    @media screen and (max-width: 1000px) {
+                        min-height: 60vh;
+                        margin-bottom: 32px;
+                    }
+                    @media screen and (max-width: 600px) {
+                        min-height: 45vh;
+                    }
+                    @media screen and (max-width: 500px) {
+                        min-height: 35vh;
+                    }
+                    @media screen and (max-width: 400px) {
+                        min-height: 27vh;
+                    }
+                }
+
+                @media screen and (max-width: 1000px) {
+                    order: 1;
+                    flex: 0 1 100%;
                 }
             }
+            @media screen and (max-width: 1000px) {
+                flex-wrap: wrap;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            background: #F1F1F1;
+            padding-top: 36px;
         }
 
+        @media screen and (max-width: 500px) {
+            margin-top: 22px;
+        }
     }
 
     &__about {
@@ -686,9 +860,11 @@
             margin-top: 48px;
 
             .list_of_items-md{
+                
                 .list_of_items__item{
                     display: flex !important;
                     flex-direction: column !important;
+
                     .item__image{
                         max-height: 255px !important;
                         display: block;
@@ -703,6 +879,22 @@
                     }
                 }
             }
+
+            .info__slider__pagination{
+                .pagination__item{
+                    @media screen and (max-width: 500px) {
+                        margin: 0px 10px !important;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            padding: 80px 0px;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 50px 0px;
         }
     }
 
@@ -730,6 +922,26 @@
             
             display: block;
             margin: 0 auto;
+
+            @media screen and (max-width: 800px) {
+                display: none;
+            }
+        }
+
+        .info__slider__pagination{
+            .pagination__item{
+                @media screen and (max-width: 500px) {
+                    margin: 0px 9px !important;
+                }
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            padding: 80px 0px;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 50px 0px;
         }
     }
 
@@ -779,7 +991,43 @@
         background: #F1F1F1;
 
         .publications__content{
+            flex-wrap: wrap;
             margin-top: 48px;
+
+            .list_of_items-md{
+                @media screen and (max-width: 1400px) {
+                    flex-wrap: wrap;
+                    .list_of_items__item{
+                        flex: 0 1 48%;
+                    }
+                }
+
+                
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .list_of_items__item{
+                .item__info{
+                    padding-left: 20px !important;
+                }
+            }
+        }
+
+        .info__slider__pagination{
+            .pagination__item{
+                @media screen and (max-width: 500px) {
+                    margin: 0px 9px !important;
+                }
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            padding: 80px 0px;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 50px 0px;
         }
     }
 }

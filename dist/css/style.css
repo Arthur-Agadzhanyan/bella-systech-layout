@@ -2377,6 +2377,7 @@ template {
 }
 
 .one-product__intro {
+  position: relative;
   padding-top: 12px;
 }
 
@@ -2461,12 +2462,17 @@ template {
 .one-product__intro .intro__content .content__video .video-js {
   display: block;
   width: 100%;
-  min-height: 637px;
+  min-height: 70vh;
   cursor: pointer;
 }
 
+.one-product__intro .intro__content .content__video .video-js video {
+  display: block;
+}
+
 .one-product__intro .intro__content .content__video .video-js .vjs-poster {
-  background-size: 110% 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .one-product__intro .intro__content .content__video .video-js .vjs-big-play-button {
@@ -3231,6 +3237,8 @@ template {
 }
 
 .one-product__publications .publications__content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 48px;
 }
 
@@ -6555,6 +6563,12 @@ a {
   line-height: normal;
 }
 
+@media screen and (max-height: 800px) and (min-width: 1200px) {
+  .one-product__intro .intro__content .content__info {
+    padding-bottom: 90px;
+  }
+}
+
 @media screen and (max-width: 2000px) {
   .guarantee__content .content__list .list__item .item__info .info__title {
     color: #272727;
@@ -6618,6 +6632,12 @@ a {
     font-weight: 300;
     line-height: normal;
     padding: 26px 50px 47px 39px;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .one-product__intro .intro__content .content__video .video-js {
+    min-height: 72vh;
   }
 }
 
@@ -6716,6 +6736,22 @@ a {
     font-size: 12px;
     font-weight: 300;
     line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__suptitle {
+    color: #272727;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__grey {
+    min-height: 57%;
+    bottom: 16%;
+  }
+
+  .one-product__intro .intro__content .content__video .video-js {
+    min-height: 65vh;
   }
 
   .news-page .page__list .list__item {
@@ -6892,6 +6928,17 @@ a {
             flex: 0 1 78%;
   }
 
+  .one-product__publications .publications__content .list_of_items-md {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .one-product__publications .publications__content .list_of_items-md .list_of_items__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+  }
+
   .devices__item .item__images img {
     margin-left: -40px;
     max-width: 130%;
@@ -7005,6 +7052,10 @@ a {
     left: 207px;
   }
 
+  .one-product__intro .intro__content .content__info .info__logo {
+    margin-bottom: 15px;
+  }
+
   .contacts-page__info .info__img {
     max-width: 50%;
   }
@@ -7115,6 +7166,35 @@ a {
         -ms-flex-order: 1;
             order: 1;
     margin: 0 auto;
+  }
+
+  .one-product__intro .intro__content .content__info .info__suptitle {
+    color: #272727;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__title {
+    color: #272727;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__block {
+    padding-left: 10px;
+  }
+
+  .one-product__intro .intro__content .content__info .info__block .block__text {
+    color: #272727;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__block .block__btn {
+    padding: 17px 48px;
   }
 
   .news-page .one-news {
@@ -7429,6 +7509,77 @@ a {
     left: -100px;
     top: initial;
     bottom: -200px;
+  }
+
+  .one-product__intro .intro__content .content__info .info__logo {
+    position: absolute;
+    top: -14px;
+  }
+
+  .one-product__intro .intro__content .content__info .info__suptitle {
+    color: #272727;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__title {
+    color: #272727;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 35px;
+  }
+
+  .one-product__intro .intro__content .content__info .info__block .block__text {
+    max-width: 600px;
+    color: #272727;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__block .block__btn {
+    padding: 21px 65px;
+  }
+
+  .one-product__intro .intro__content .content__info .info__grey {
+    display: none;
+  }
+
+  .one-product__intro .intro__content .content__info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: static;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding-bottom: 100px;
+  }
+
+  .one-product__intro .intro__content .content__video .video-js {
+    min-height: 60vh;
+    margin-bottom: 32px;
+  }
+
+  .one-product__intro .intro__content .content__video {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .one-product__intro .intro__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .one-product__intro {
+    background: #F1F1F1;
+    padding-top: 36px;
   }
 
   .one-product__skincare .skincare__content .list_of_items__item {
@@ -7765,6 +7916,34 @@ a {
 
   .list_of_items .list_slider__container {
     display: block;
+  }
+
+  .one-product__intro .intro__content .content__info .info__logo {
+    left: 42px;
+  }
+
+  .one-product__intro .intro__content .content__info .info__block {
+    padding-left: 0px;
+  }
+
+  .one-product__intro .intro__content .content__info {
+    padding-left: 0px;
+  }
+
+  .one-product__other_devices {
+    padding: 80px 0px;
+  }
+
+  .one-product__skincare .skincare__button {
+    display: none;
+  }
+
+  .one-product__skincare {
+    padding: 80px 0px;
+  }
+
+  .one-product__publications {
+    padding: 80px 0px;
   }
 
   .news-page .one-news {
@@ -8428,6 +8607,51 @@ a {
     display: flex;
   }
 
+  .one-product__intro .intro__content .content__info .info__suptitle {
+    color: #272727;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__title {
+    color: #272727;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+
+  .one-product__intro .intro__content .content__info .info__block .block__text {
+    max-width: 600px;
+    color: #272727;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__block .block__btn {
+    padding: 20px 65px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .one-product__intro .intro__content .content__video .video-js {
+    min-height: 45vh;
+  }
+
+  .one-product__other_devices {
+    padding: 50px 0px;
+  }
+
+  .one-product__skincare {
+    padding: 50px 0px;
+  }
+
+  .one-product__publications {
+    padding: 50px 0px;
+  }
+
   .page_title-md {
     display: none;
   }
@@ -8924,6 +9148,64 @@ a {
     font-size: 18px;
   }
 
+  .one-product__intro .intro__content .content__info .info__suptitle {
+    color: #272727;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__title {
+    margin-top: 8px;
+    color: #272727;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__block .block__text {
+    margin-bottom: 40px;
+    color: #272727;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__block .block__btn {
+    font-weight: 300;
+    padding: 13px 43px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .one-product__intro .intro__content .content__info {
+    padding-bottom: 50px;
+  }
+
+  .one-product__intro .intro__content .content__video .video-js {
+    min-height: 35vh;
+  }
+
+  .one-product__intro {
+    margin-top: 22px;
+  }
+
+  .one-product__other_devices .other_devices__content .info__slider__pagination .pagination__item {
+    margin: 0px 10px !important;
+  }
+
+  .one-product__skincare .info__slider__pagination .pagination__item {
+    margin: 0px 9px !important;
+  }
+
+  .one-product__publications .list_of_items__item .item__info {
+    padding-left: 20px !important;
+  }
+
+  .one-product__publications .info__slider__pagination .pagination__item {
+    margin: 0px 9px !important;
+  }
+
   .page_title-mb-one-news {
     margin-top: 5px;
   }
@@ -9404,6 +9686,30 @@ a {
     font-size: 12px;
     font-weight: 300;
     line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__suptitle {
+    color: #272727;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__info .info__title {
+    color: #272727;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .one-product__intro .intro__content .content__video .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
+    -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+
+  .one-product__intro .intro__content .content__video .video-js {
+    min-height: 27vh;
   }
 
   .news-page .page__list .list__item .item__info .info__title {

@@ -169,6 +169,29 @@ const oneProductOtherDevicesMbSlider = new Swiper('#one-product-other_devices_mb
     loopedSlides: 1,
     autoHeight: true,
     speed: 1300,
+    pagination: {
+        clickable: true,
+        type: 'bullets',
+        el: '#main_page-news_slider_pagination',
+        bulletElement: 'div',
+        bulletClass: 'pagination__item',
+        bulletActiveClass: 'pagination__item_active',
+        renderBullet: function (index, className) {
+            return '<div class="' + className + '">*</div>';
+        }
+    },
+    navigation: {
+        prevEl: '#other_devices_slider_arrow_left',
+        nextEl: '#other_devices_slider_arrow_right'
+    }
+})
+
+const oneProductAutoMbSlider = new Swiper('#one-product-auto_mb_slider', {
+    slidesPerView: 1,
+    loop: true,
+    loopedSlides: 1,
+    autoHeight: true,
+    speed: 1300,
     autoplay: {
         delay: 2500
     },
@@ -184,8 +207,34 @@ const oneProductOtherDevicesMbSlider = new Swiper('#one-product-other_devices_mb
         }
     },
     navigation: {
-        prevEl: '#other_devices_slider_arrow_left',
-        nextEl: '#other_devices_slider_arrow_right'
+        prevEl: '#one_product-auto_slider_arrow_left',
+        nextEl: '#one_product-auto_slider_arrow_right'
+    }
+})
+
+const oneProductNewsMbSlider = new Swiper('#one-product-news_mb_slider', {
+    slidesPerView: 1,
+    loop: true,
+    loopedSlides: 1,
+    autoHeight: true,
+    speed: 1300,
+    autoplay: {
+        delay: 2500
+    },
+    pagination: {
+        clickable: true,
+        type: 'bullets',
+        el: '#main_page-news_slider_pagination',
+        bulletElement: 'div',
+        bulletClass: 'pagination__item',
+        bulletActiveClass: 'pagination__item_active',
+        renderBullet: function (index, className) {
+            return '<div class="' + className + '">*</div>';
+        }
+    },
+    navigation: {
+        prevEl: '#one_product-news_slider_arrow_left',
+        nextEl: '#one_product-news_slider_arrow_right'
     }
 });
 /**
