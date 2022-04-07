@@ -159,6 +159,18 @@ const oneProductEffectSlider = new Swiper('#one_page-effect_slider',{
         nextEl: "#one_page-effect_slider-next",
         prevEl: "#one_page-effect_slider-prev",
     },
+    
+    breakpoints:{
+        320:{
+            spaceBetween: 10,
+        },
+        500:{
+            spaceBetween: 20,
+        },
+        900:{
+            spaceBetween: 40,
+        },
+    }
 })
 
 //Other devices

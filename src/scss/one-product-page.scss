@@ -898,6 +898,7 @@
             .content__slider{
                 position: relative;
                 margin-top: 48px;
+
                 .effect__slider{
                     max-width: 60%;
 
@@ -923,12 +924,59 @@
                                 background: #F1F1F1;
                                 color: $black;
                             }
+
                             &-after{
                                 left: 42px;
                                 background: linear-gradient(267.29deg, #E11F26 4.23%, #DD408B 104.93%), #C4C4C4;
                                 color: #fff;
                             }
+
+                            @media screen and (max-width: 900px) {
+                                font-size: 28px;
+                                bottom: 20px;
+
+                                &-before{
+                                    right: 20px;
+                                }
+    
+                                &-after{
+                                    left: 20px;
+                                }
+                            }
+
+                            @media screen and (max-width: 500px) {
+                                min-width: 56px;
+                                text-align: center;
+                                padding: 3px 10px;
+                                font-weight: 300;
+                                font-size: 18px;
+
+                                bottom: 10px;
+
+                                &-before{
+                                    right: 10px;
+                                }
+    
+                                &-after{
+                                    left: 10px;
+                                }
+                            }
                         }
+                    }
+
+                    @media screen and (max-width: 1500px) {
+                        max-width: 65%;
+                    }
+
+                    @media screen and (max-width: 1200px) {
+                        max-width: 75%;
+                    }
+
+                    @media screen and (max-width: 1100px) {
+                        max-width: 85%;
+                    }
+                    @media screen and (max-width: 700px) {
+                        max-width: 100%;        
                     }
                 }
 
@@ -936,16 +984,45 @@
                     &::after{
                         content:""
                     }
+                    @media screen and (max-width: 700px) {
+                        display: none;   
+                    }
                 }
 
                 .effect__arrow-prev{
                     left: 10vw;
+
+                    @media screen and (max-width: 1200px) {
+                        left: 5vw;
+                    }
+                    @media screen and (max-width: 1100px) {
+                        left: 3vw;
+                    }
                 }
 
                 .effect__arrow-next{
                     right: 10vw;
+
+                    @media screen and (max-width: 1200px) {
+                        right: 5vw;
+                    }
+
+                    @media screen and (max-width: 1100px) {
+                        right: 3.2vw;
+                    }
+                }
+
+                @media screen and (max-width: 500px) {
+                    margin-top: 32px;
                 }
             }
+        }
+
+        @media screen and (max-width: 1200px) {
+            padding: 100px 0px;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 50px 0px;
         }
     }
 
