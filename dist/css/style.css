@@ -2576,7 +2576,6 @@ template {
   top: 0;
   right: 0;
   height: 100%;
-  max-width: 64%;
   z-index: -1;
   display: block;
 }
@@ -3240,6 +3239,44 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 48px;
+}
+
+.one-product__publications .publications__content .mb_btn_link {
+  display: none;
+  margin-top: 38px;
+}
+
+.one-product__publications .publications__content .content__btn {
+  color: #272727 !important;
+  padding: 15px 42px;
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  border: 1px solid #848484;
+  background: transparent;
+  margin-top: 28px;
+}
+
+.one-product__publications .publications__content .content__btn span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #272727;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.one-product__publications .publications__content .content__btn .btn__arrow {
+  margin-bottom: -6px;
+}
+
+.one-product__publications .publications__content .content__btn:hover {
+  background: rgba(132, 132, 132, 0.23) !important;
+  border-color: rgba(132, 132, 132, 0.23) !important;
 }
 
 .news-page .news {
@@ -6639,6 +6676,14 @@ a {
   .one-product__intro .intro__content .content__video .video-js {
     min-height: 72vh;
   }
+
+  .one-product__about .about__img {
+    right: -10%;
+  }
+
+  .one-product__about {
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -6752,6 +6797,10 @@ a {
 
   .one-product__intro .intro__content .content__video .video-js {
     min-height: 65vh;
+  }
+
+  .one-product__about .about__img {
+    right: -15%;
   }
 
   .news-page .page__list .list__item {
@@ -6926,6 +6975,10 @@ a {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 78%;
             flex: 0 1 78%;
+  }
+
+  .one-product__about .about__img {
+    right: -18%;
   }
 
   .one-product__publications .publications__content .list_of_items-md {
@@ -7103,6 +7156,10 @@ a {
     line-height: normal;
   }
 
+  .one-product__publications .publications__content .content__btn {
+    margin-top: 10px;
+  }
+
   .news .news__content .content__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -7195,6 +7252,36 @@ a {
 
   .one-product__intro .intro__content .content__info .info__block .block__btn {
     padding: 17px 48px;
+  }
+
+  .one-product__about .about__content .content__info .info__block .block__buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .one-product__about .about__content .content__info .info__block {
+    padding-left: 0;
+  }
+
+  .one-product__about .about__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .one-product__about .about__content {
+    padding: 0px 40px;
+  }
+
+  .one-product__about .about__img {
+    display: none;
+  }
+
+  .one-product__about {
+    padding: 100px 0px;
   }
 
   .news-page .one-news {
@@ -7832,6 +7919,12 @@ a {
     margin-bottom: -80px;
   }
 
+  .one-product__about .about__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 85%;
+            flex: 0 1 85%;
+  }
+
   .contacts-page__info .info__item .item__text {
     color: #272727;
     font-size: 24px;
@@ -7940,6 +8033,20 @@ a {
 
   .one-product__skincare {
     padding: 80px 0px;
+  }
+
+  .one-product__publications .publications__content .mb_btn_link {
+    display: block;
+  }
+
+  .one-product__publications .publications__content .content__btn {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 29px;
+  }
+
+  .one-product__publications .publications__content .content__btn .btn__arrow {
+    margin-left: 10px;
   }
 
   .one-product__publications {
@@ -8216,6 +8323,16 @@ a {
     padding-bottom: 50px;
   }
 
+  .one-product__about .about__content .content__info .info__block .block__text {
+    text-align: left;
+  }
+
+  .one-product__about .about__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
   .contacts-page__info .info__item .item__text {
     padding-left: 10px;
   }
@@ -8431,6 +8548,24 @@ a {
 
   .questions .top__pixels {
     left: -300px;
+  }
+
+  .one-product__about .about__content .content__info .info__block .block__buttons .buttons__item {
+    margin-right: auto;
+    margin-bottom: 12px;
+    margin-left: 5px;
+    width: 270px;
+  }
+
+  .one-product__about .about__content .content__info .info__block .block__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .one-product__about .about__content {
+    padding: 0px 24px;
   }
 
   .one-product__benefits .benefits__content {
@@ -9190,12 +9325,52 @@ a {
     margin-top: 22px;
   }
 
+  .one-product__about .about__content .content__info .info__title {
+    color: #272727;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 19px;
+  }
+
+  .one-product__about .about__content .content__info .info__block .block__text {
+    color: #272727;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+
+  .one-product__about .about__content .content__info .info__block .block__buttons .buttons__item {
+    font-size: 14px;
+    padding: 8px 9px;
+    width: 210px;
+  }
+
+  .one-product__about .about__content .content__info .info__block .block__buttons .buttons__item img {
+    width: 15px;
+    margin-bottom: -3px;
+    margin-right: 10px;
+  }
+
+  .one-product__about .about__content {
+    margin-top: 34px;
+  }
+
+  .one-product__about {
+    padding: 50px 0px;
+  }
+
   .one-product__other_devices .other_devices__content .info__slider__pagination .pagination__item {
     margin: 0px 10px !important;
   }
 
   .one-product__skincare .info__slider__pagination .pagination__item {
     margin: 0px 9px !important;
+  }
+
+  .one-product__publications .publications__content .mb_btn_link {
+    margin-top: 28px;
   }
 
   .one-product__publications .list_of_items__item .item__info {
@@ -9413,6 +9588,10 @@ a {
 
   .mb_filters_menu {
     top: 111px;
+  }
+
+  .one-product__about .about__content {
+    padding: 0px 13px;
   }
 
   .one-product__benefits .benefits__content {
@@ -9710,6 +9889,13 @@ a {
 
   .one-product__intro .intro__content .content__video .video-js {
     min-height: 27vh;
+  }
+
+  .one-product__about .about__content .content__info .info__block .block__text {
+    color: #272727;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
   }
 
   .news-page .page__list .list__item .item__info .info__title {
