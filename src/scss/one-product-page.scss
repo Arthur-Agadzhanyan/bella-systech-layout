@@ -1023,7 +1023,8 @@
                     }
 
                     .vjs-poster{
-                        background-size: 110% 100%;
+                        background-position: center;
+                        background-size:cover;
                     }
 
                     .vjs-big-play-button{
@@ -1042,7 +1043,52 @@
                             max-height: 72px;
                             content: url('../img/icons/play_circle_filled.svg');
                             background:  transparent;
+                            @media screen and (max-width: 400px) {
+                                transform: scale(.8);
+                            }
                         }
+                        
+                    }
+
+                    @media screen and (max-width: 1500px) {
+                        min-height: 220px;
+                    }
+                    @media screen and (max-width: 1200px) {
+                        min-height: 180px;
+                    }
+                    @media screen and (max-width: 1000px) {
+                        min-height: 250px;
+                    }
+                    @media screen and (max-width: 900px) {
+                        min-height: 220px;
+                    }
+
+                    @media screen and (max-width: 800px) {
+                        min-height: 50vh;
+                    }
+
+                    @media screen and (max-width: 700px) {
+                        min-height: 40vh;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        min-height: 35vh;
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        min-height: 30vh;
+                    }
+
+                    @media screen and (max-width: 450px) and (min-height: 800px) {
+                        min-height: 25vh;
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        min-height: 30vh;
+                    }
+
+                    @media screen and (max-width: 360px) {
+                        min-height: 176px;
                     }
                 }
 
@@ -1063,7 +1109,7 @@
                     bottom: 0;
                     z-index: 2;
                     background: linear-gradient(267.29deg, rgba(225, 31, 38, 0.5) 4.23%, rgba(221, 64, 139, 0.5) 104.93%);
-                    ;
+                    
                 }
 
                 .item__img {
@@ -1080,7 +1126,55 @@
                     height: auto;
                     flex-grow: 1;
                 }
+
+                @media screen and (max-width: 1000px) {
+                    flex: 0 1 44%;
+                    margin-bottom: 32px;
+                }
+
+                @media screen and (max-width: 800px) {
+                    margin-bottom: 0px;
+                }
             }
+
+            &-slider{
+                display: none;
+            }
+            @media screen and (max-width: 1000px) {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+            }
+
+            @media screen and (max-width: 800px) {
+                &-list{
+                    display: none;
+                }
+                &-slider{
+                    display: block;
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                margin-bottom: 46px;
+                padding-top: 36px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .procedure__videos{
+                .list_slider_arrow_left,.list_slider_arrow_right{
+                    margin-top: -45px !important;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            padding: 100px 0px;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 50px 0px;
+            padding-bottom: 12px;
         }
     }
 

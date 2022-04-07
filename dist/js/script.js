@@ -151,6 +151,32 @@ oneProductBigSlider.on('slideChangeTransitionEnd', function() {
     oneProductSmallSlider.slideTo(index_currentSlide, 1000, false);
 });
 
+//Procedures
+const oneProcedurePhotosMbSlider = new Swiper('#one-product-procedure_photos_mb_slider', {
+    slidesPerView: 1,
+    loop: true,
+    loopedSlides: 1,
+    autoHeight: true,
+    speed: 1300,
+    autoplay: {
+        delay: 2500
+    },
+    pagination: {
+        clickable: true,
+        type: 'bullets',
+        el: '#main_page-news_slider_pagination',
+        bulletElement: 'div',
+        bulletClass: 'pagination__item',
+        bulletActiveClass: 'pagination__item_active',
+        renderBullet: function (index, className) {
+            return '<div class="' + className + '">*</div>';
+        }
+    },
+    navigation: {
+        prevEl: '#one_product-procedure_photos_mb_slider_arrow_left',
+        nextEl: '#one_product-procedure_photos_mb_slider_arrow_right'
+    }
+})
 //EFFECT
 
 const oneProductEffectSlider = new Swiper('#one_page-effect_slider',{
