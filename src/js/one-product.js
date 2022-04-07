@@ -4,7 +4,11 @@ const oneProductBigSlider = new Swiper('#one_product_page-big_slider',{
     loop: true,
     autoHeight: true,
     slidesPerGroup: true,
-    speed: 1000
+    speed: 1000,
+    navigation:{
+        nextEl: ".big__slider_next",
+        prevEl: ".big__slider_prev",
+    },
 })
 
 const oneProductSmallSlider = new Swiper('#one_product_page-small_slider',{
