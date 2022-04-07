@@ -3019,6 +3019,10 @@ template {
   padding: 124px 0px;
 }
 
+.one-product__reviews .reviews__content {
+  min-width: 0;
+}
+
 .one-product__reviews .reviews__content .content__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3026,7 +3030,10 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 53px;
+  min-width: 0;
 }
 
 .one-product__reviews .reviews__content .content__list .list__item {
@@ -3035,6 +3042,7 @@ template {
           flex: 0 1 32%;
   background: #fff;
   padding: 24px;
+  min-width: 0;
 }
 
 .one-product__reviews .reviews__content .content__list .list__item .item__head {
@@ -7100,6 +7108,20 @@ a {
   }
 }
 
+@media screen and (max-width: 1350px) {
+  .one-product__reviews .reviews__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+    margin-bottom: 24px;
+  }
+
+  .one-product__reviews .reviews__content .content__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 @media screen and (max-width: 1330px) {
   .navbar__contacts .contacts__phone {
     margin: 0px 20px;
@@ -7303,6 +7325,10 @@ a {
   }
 
   .one-product__about {
+    padding: 100px 0px;
+  }
+
+  .one-product__reviews {
     padding: 100px 0px;
   }
 
@@ -7736,6 +7762,12 @@ a {
     padding-top: 36px;
   }
 
+  .one-product__reviews .reviews__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 75%;
+            flex: 0 1 75%;
+  }
+
   .one-product__skincare .skincare__content .list_of_items__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 48%;
@@ -8101,6 +8133,37 @@ a {
 
   .one-product__intro .intro__content .content__info {
     padding-left: 0px;
+  }
+
+  .one-product__reviews .reviews__content .content__list-md {
+    display: none !important;
+  }
+
+  .one-product__reviews .reviews__content .content__list .list__item .item__text p {
+    margin-bottom: 10px;
+    color: #272727;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .one-product__reviews .reviews__content .content__list .list__item {
+    margin-bottom: 0px;
+  }
+
+  .one-product__reviews .reviews__content .content__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    display: block;
+  }
+
+  .one-product__reviews .reviews__content {
+    min-width: 0;
+  }
+
+  .one-product__reviews {
+    overflow: hidden;
   }
 
   .one-product__other_devices {
@@ -9471,6 +9534,10 @@ a {
   }
 
   .one-product__about {
+    padding: 50px 0px;
+  }
+
+  .one-product__reviews {
     padding: 50px 0px;
   }
 

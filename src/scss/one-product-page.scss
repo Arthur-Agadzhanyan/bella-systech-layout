@@ -847,16 +847,25 @@
         padding: 124px 0px;
 
         .reviews__content {
+            min-width: 0;
             .content__list {
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
                 margin-top: 53px;
+                min-width: 0;
+
+                &-md{
+                    @media screen and (max-width: 800px) {
+                       display: none !important; 
+                    }
+                }
 
                 .list__item {
                     flex: 0 1 32%;
                     background: #fff;
                     padding: 24px;
-
+                    min-width: 0;
                     .item__head {
                         display: flex;
                         align-items: center;
@@ -876,18 +885,55 @@
                                 @include text($black, 14px, 700);
                             }
                         }
+
+                        
                     }
 
                     .item__text {
                         p {
                             font-family: Garamond;
                             margin-bottom: 20px;
-                            @include text($black, 18px, 400)
+                            @include text($black, 18px, 400);
+
+                            @media screen and (max-width: 800px) {
+                                margin-bottom: 10px;
+                                @include text($black, 16px, 400);
+                            }
                         }
                     }
+
+                    @media screen and (max-width: 1350px) {
+                        flex: 0 1 48%;
+                        margin-bottom: 24px;
+                    }
+                    @media screen and (max-width: 1000px) {
+                        flex: 0 1 75%;
+                    }
+                    @media screen and (max-width: 800px) {
+                        margin-bottom: 0px;
+                    }
+                }
+                @media screen and (max-width: 1350px) {
+                    justify-content: space-around;
                 }
 
+                @media screen and (max-width: 800px) {
+                    justify-content: start;
+                    display: block;
+                }
             }
+            @media screen and (max-width: 800px) {
+                min-width: 0;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            padding: 100px 0px;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 50px 0px;
+        }
+        @media screen and (max-width: 800px) {
+            overflow: hidden;
         }
     }
 
