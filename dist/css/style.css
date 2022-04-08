@@ -1835,6 +1835,77 @@ template {
           align-items: flex-end;
 }
 
+.seminars {
+  position: relative;
+  overflow: hidden;
+  background: -o-linear-gradient(182.71deg, #E11F26 4.23%, #DD408B 104.93%), #DD408B;
+  background: linear-gradient(267.29deg, #E11F26 4.23%, #DD408B 104.93%), #DD408B;
+}
+
+.seminars .seminars__image {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.seminars .seminars__image-mb {
+  display: none;
+}
+
+.seminars .seminars__content {
+  max-width: 900px;
+  padding: 63px 16px;
+  margin: 0 auto;
+}
+
+.seminars .seminars__content .content__title,
+.seminars .seminars__content .seminars__content,
+.seminars .seminars__content .content__bottom {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.seminars .seminars__content .content__rhombus {
+  display: block;
+  margin: 22px auto;
+}
+
+.seminars .seminars__content .content__title {
+  font-family: Garamond !important;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.seminars .seminars__content .content__text {
+  font-family: Garamond !important;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+}
+
+.seminars .seminars__content .content__bottom {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.seminars .seminars__content .content__bottom-phone {
+  margin-top: 11px;
+  margin-bottom: 41px;
+}
+
 .products-page .page_title-md {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5642,6 +5713,10 @@ a {
   line-height: 22px;
 }
 
+.page-content {
+  min-height: 60vh;
+}
+
 .intro {
   position: relative;
   padding-bottom: 40px;
@@ -7946,6 +8021,27 @@ a {
     bottom: -200px;
   }
 
+  .seminars .seminars__content .content__title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .seminars .seminars__content .content__text {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .seminars .seminars__content .content__bottom {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
   .one-product__intro .intro__content .content__info .info__logo {
     position: absolute;
     top: -14px;
@@ -8843,6 +8939,49 @@ a {
 
   .questions__content .content__form .form__div .form__label {
     font-weight: 300 !important;
+  }
+
+  .seminars .seminars__image {
+    display: none;
+  }
+
+  .seminars .seminars__image-mb {
+    display: block;
+  }
+
+  .seminars .seminars__content .content__rhombus {
+    margin: 16px auto;
+  }
+
+  .seminars .seminars__content .content__title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .seminars .seminars__content .content__text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .seminars .seminars__content .content__bottom {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .seminars .seminars__content .content__bottom-phone {
+    max-width: initial;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 25px;
+    margin-bottom: 24px;
   }
 
   .products-page .products__content {
@@ -9783,6 +9922,30 @@ a {
   .questions__content {
     max-width: 450px;
     padding: 0px 16px;
+  }
+
+  .seminars .seminars__content .content__title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  .seminars .seminars__content .content__text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  .seminars .seminars__content .content__bottom {
+    max-width: 258px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seminars .seminars__content {
+    padding: 50px 16px;
   }
 
   .products-page .filters__mb_btn .btn__arrow {

@@ -30,6 +30,7 @@
 //SECTIONS
 @import "./course-enrollment-section.scss";
 @import "./questions-section.scss";
+@import "./seminars-section.scss";
 
 //PAGES
 @import './products-page.scss';
@@ -154,6 +155,10 @@ a {
 .section_text {
   font-family: Garamond;
   @include text(#272727, 20px, 400, 22px);
+}
+
+.page-content{
+  min-height: 60vh;
 }
 
 //Main page

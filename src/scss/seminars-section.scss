@@ -1,0 +1,113 @@
+.seminars{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(267.29deg, #E11F26 4.23%, #DD408B 104.93%), #DD408B;
+
+    .seminars__image{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        transform: translateY(-50%);
+
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    .seminars__image-mb{
+        display: none;
+        @media screen and (max-width: 700px) {
+            display: block;
+        }
+    }
+
+    .seminars__content{
+        max-width: 900px;
+        padding: 63px 16px;
+        margin: 0 auto;
+
+        .content__title, .seminars__content, .content__bottom{
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .content__rhombus{
+            display: block;
+            margin: 22px auto;
+
+            @media screen and (max-width: 700px) {
+                margin: 16px auto;
+            }
+        }
+
+        .content__title{
+            font-family: Garamond !important;
+            @include text(#fff,32px,400);
+
+            @media screen and (max-width: 1000px) {
+                @include text(#fff,28px,400);
+            }
+            @media screen and (max-width: 700px) {
+                @include text(#fff,24px,400);
+            }
+            @media screen and (max-width: 500px) {
+                @include text(#fff,16px,400,120%);
+            }
+        }
+
+        .content__text{
+            font-family: Garamond !important;
+            @include text(#fff,28px,300);
+            text-align: center;
+
+            @media screen and (max-width: 1000px) {
+                @include text(#fff,24px,400);
+            }
+
+            @media screen and (max-width: 700px) {
+                @include text(#fff,20px,400);
+            }
+
+            @media screen and (max-width: 500px) {
+                @include text(#fff,16px,400,120%);
+            }
+        }
+
+        .content__bottom{
+            @include text(#fff,24px,700);
+
+            @media screen and (max-width: 1000px) {
+                @include text(#fff,20px,700);
+            }
+
+            @media screen and (max-width: 700px) {
+                @include text(#fff,16px,700);
+            }
+            @media screen and (max-width: 500px) {
+                max-width: 258px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .content__bottom-phone{
+            margin-top: 11px;
+            margin-bottom: 41px;
+
+            @media screen and (max-width: 700px) {
+                max-width: initial;
+                @include text(#fff,24px,700);
+                margin-top: 25px;
+                margin-bottom: 24px;
+            }
+        }
+
+        @media screen and (max-width: 500px ) {
+            padding: 50px 16px;
+        }
+    }
+}
