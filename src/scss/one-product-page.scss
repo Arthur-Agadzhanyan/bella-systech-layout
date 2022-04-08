@@ -1202,6 +1202,32 @@
                     flex: 0 1 32%;
                     padding: 10px 0px;
                     @include text($black,16px,400);
+
+                    @media screen and (max-width: 1000px) {
+                        flex: 0 1 40%;
+                        &-empty{
+                            flex: 0 1 20%;
+                        }
+                    }
+
+                    @media screen and (max-width: 800px) {
+                        flex: 0 1 48%;
+                        &-empty{
+                            display: none;
+                        }
+                    }
+
+                    @media screen and (max-width: 650px) {
+                        @include text($black,14px,400);
+                        padding-top: 3px;
+                        padding-bottom: 8px;
+                    }
+                    @media screen and (max-width: 500px) {
+                        @include text($black,12px,400);
+                        &:nth-child(2n){
+                            padding-left: 11px;
+                        }
+                    }
                 }
 
                 &-head {
@@ -1222,11 +1248,11 @@
                 }
 
                 @media screen and (max-width: 1330px) {
-                    padding-left: 40px;
+                    padding-left: 20px;
                 }
 
                 @media screen and (max-width: 650px) {
-                    padding-left: 24px;
+                    min-height: 46px;
                 }
 
                 @media screen and (max-width: 450px) {
@@ -1234,7 +1260,12 @@
                 }
             }
 
+            @media screen and (max-width: 1200px) {
+                margin-top: 12px;
+                max-width: 100%;
+            }
 
+            
         }
 
         .capability__image{
@@ -1246,6 +1277,47 @@
             img{
                 max-width: 35vw;
             }
+
+            &-mb{
+                display: none;
+            }
+
+            @media screen and (max-width: 1500px) {
+                right: 5vw;
+            }
+            @media screen and (max-width: 1300px) {
+                right: 2vw;
+            }
+            @media screen and (max-width: 1200px) {
+                display: none;
+
+                &-mb{
+                    display: flex;
+                    justify-content: center;
+
+                    margin-top: 31px;
+
+                    img{
+                        min-height: 50vh;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                &-mb{
+                    img{
+                        min-height: initial;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            padding: 80px 40px;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 50px 16px;
         }
     }
 
