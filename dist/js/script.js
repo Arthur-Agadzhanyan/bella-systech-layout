@@ -279,6 +279,33 @@ const oneProductNewsMbSlider = new Swiper('#one-product-news_mb_slider', {
         nextEl: '#one_product-news_slider_arrow_right'
     }
 });
+const educationPageVebinarsBtn = document.getElementById('education_page-vebinars_btn')
+const educationPageArticlesBtn = document.getElementById('education_page-articles_btn')
+
+const educationPageVebinarsList = document.getElementById('education_page-vebinars_list')
+const educationPageArticlesList = document.getElementById('education_page-articles_list')
+const activeClass = 'tab_buttons__item-active'
+const listHiddenClass = 'list_hidden'
+
+educationPageVebinarsBtn.addEventListener('click',(e)=>{
+    educationPageVebinarsBtn.classList.add(activeClass)
+
+    educationPageArticlesBtn.classList.remove(activeClass)
+
+    educationPageVebinarsList.classList.remove(listHiddenClass)
+
+    educationPageArticlesList.classList.add(listHiddenClass)
+})
+
+educationPageArticlesBtn.addEventListener('click',(e)=>{
+    educationPageArticlesBtn.classList.add(activeClass)
+
+    educationPageVebinarsBtn.classList.remove(activeClass)
+
+    educationPageArticlesList.classList.remove(listHiddenClass)
+
+    educationPageVebinarsList.classList.add(listHiddenClass)
+});
 /**
  * @license
  * Video.js 7.18.1 <http://videojs.com/>

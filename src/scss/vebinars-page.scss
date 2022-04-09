@@ -1,0 +1,79 @@
+.vebinars{
+    .vebinars__content{
+        padding-bottom: 80px;
+    }
+    .tab_buttons{
+        margin-top: 32px;
+
+        &__item{
+            padding: 10px 22px;
+            border: 1px solid #F1F1F1;
+            background: #fff;
+            @include text($black,16px,700);
+            margin-right: 16px;
+            cursor: pointer;
+
+            transition: all .2s linear;
+
+            &:hover{
+                background: #F1F1F1;
+            }
+
+            &-active{
+                background: #F1F1F1;
+
+                pointer-events: none;
+            }
+            @media screen and (max-width: 500px) {
+                margin-right: 8px;
+                padding: 5px 14px;
+                font-weight: 400;
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+
+            @media screen and (max-width: 400px) {
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+            @media screen and (max-width: 360px) {
+                padding: 5px 8px 5px 4px;
+            }
+        }
+
+        
+    }
+
+    .vebinars-page__btn{
+        display: block;
+        padding: 10px 37px;
+        padding-right: 23px;
+        margin: 0 auto;
+        margin-top: 10px;
+
+        border: 1px solid #848484;
+        background: #fff;
+
+        span{
+            display: flex;
+            align-items: center;
+
+            img{
+                margin-left: 10px;
+                transform: scale(.9);
+                margin-bottom: -3px;
+            }
+        }
+
+        &:hover{
+            background: darken(#fff,10%);
+        }
+    }
+
+    .list_hidden{
+        display: none;
+        opacity: 0;
+    }
+}
