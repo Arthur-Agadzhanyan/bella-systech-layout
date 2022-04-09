@@ -6,22 +6,24 @@ const educationPageArticlesList = document.getElementById('education_page-articl
 const activeClass = 'tab_buttons__item-active'
 const listHiddenClass = 'list_hidden'
 
-educationPageVebinarsBtn.addEventListener('click',(e)=>{
-    educationPageVebinarsBtn.classList.add(activeClass)
-
-    educationPageArticlesBtn.classList.remove(activeClass)
-
-    educationPageVebinarsList.classList.remove(listHiddenClass)
-
-    educationPageArticlesList.classList.add(listHiddenClass)
-})
-
-educationPageArticlesBtn.addEventListener('click',(e)=>{
-    educationPageArticlesBtn.classList.add(activeClass)
-
-    educationPageVebinarsBtn.classList.remove(activeClass)
-
-    educationPageArticlesList.classList.remove(listHiddenClass)
-
-    educationPageVebinarsList.classList.add(listHiddenClass)
-})
+if(educationPageVebinarsBtn && educationPageArticlesBtn){
+    educationPageVebinarsBtn.addEventListener('click',(e)=>{
+        educationPageVebinarsBtn.classList.add(activeClass)
+    
+        educationPageArticlesBtn.classList.remove(activeClass)
+    
+        educationPageVebinarsList.classList.remove(listHiddenClass)
+    
+        educationPageArticlesList.classList.add(listHiddenClass)
+    })
+    
+    educationPageArticlesBtn.addEventListener('click',(e)=>{
+        educationPageArticlesBtn.classList.add(activeClass)
+    
+        educationPageVebinarsBtn.classList.remove(activeClass)
+    
+        educationPageArticlesList.classList.remove(listHiddenClass)
+    
+        educationPageVebinarsList.classList.add(listHiddenClass)
+    })
+}
