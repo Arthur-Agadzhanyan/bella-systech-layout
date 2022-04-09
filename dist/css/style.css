@@ -3763,6 +3763,17 @@ template {
   pointer-events: none;
 }
 
+.vebinars__youtube {
+  max-width: 531px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  color: #272727;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
 .vebinars .vebinars-page__btn {
   display: block;
   padding: 10px 37px;
@@ -9930,6 +9941,14 @@ a {
 
   .news-page .page__list {
     margin-top: 24px;
+  }
+
+  .vebinars__youtube {
+    text-align: left;
+    color: #272727;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
   }
 
   .about_us__content .content__list .list__item .item__text {

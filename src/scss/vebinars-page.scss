@@ -50,6 +50,20 @@
         
     }
 
+    &__youtube{
+        max-width: 531px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 24px;
+
+        @include text($black,18px,600,100%);
+
+        @media screen and (max-width: 550px) {
+            text-align: left;
+            @include text($black,16px,600,100%);
+        }
+    }
+
     .vebinars-page__btn{
         display: block;
         padding: 10px 37px;
