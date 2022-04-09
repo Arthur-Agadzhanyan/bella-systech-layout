@@ -1,0 +1,115 @@
+.text_page{
+    &__block{
+        padding-top: 24px;    
+            .text-with-image__info{
+                flex: 0 1 48%;
+                .info__title{
+                    @include text($black,36px,300);
+
+                    @media screen and (max-width: 1200px) {
+                        text-align: center;
+                        margin-top: 24px;
+                    }
+                }
+            }
+
+            &-second{
+                padding-top: 61px;
+                padding-bottom: 48px;
+
+                .text-with-image__info{
+                    order: 2;
+                }
+
+                .text-with-image__image{
+                    order: 1;
+                }
+
+                @media screen and (max-width: 650px) {
+                    width: 100vw;
+                    background: #F1F1F1;
+                    margin-left: -24px;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                }
+
+                @media screen and (max-width: 450px) {
+                    margin-left: -16px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+            }
+
+            .text-with-image__image{
+                .video-js {
+                    display: block;
+                    width: 100%;
+                    min-height: 55vh;
+                    
+                    cursor: pointer;
+
+                    video{
+                        // height: auto;
+                    }
+
+                    .vjs-poster{
+                        background-position: center;
+                        background-size:cover;
+                    }
+
+                    .vjs-big-play-button{
+                        background: transparent;
+                        max-height: 72px;
+                        border: none;
+
+                        top:50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        .vjs-icon-placeholder{
+                            border: none;
+                        }
+                        .vjs-icon-placeholder::before{
+                            border: none;
+                            max-height: 72px;
+                            content: url('../img/icons/play_circle_filled.svg');
+                            background:  transparent;
+                            @media screen and (max-width: 400px) {
+                                transform: scale(.8);
+                            }
+                        }
+                        
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        min-height: 40vh;
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        min-height: 35vh;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        min-height: 30vh;
+                    }
+                    @media screen and (max-width: 350px) {
+                        min-height: 27vh;
+                    }
+                }
+
+                @media screen and (max-width: 1200px) {
+                   position: relative;
+                   max-width: 70%;
+                   width: 100%;
+                }
+
+                @media screen and (max-width: 800px) {
+                    max-width: 100%;
+                }
+            }
+
+            @media screen and (max-width: 650px) {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+    }
+}
