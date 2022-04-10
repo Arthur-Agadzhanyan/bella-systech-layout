@@ -3927,6 +3927,7 @@ template {
 .about_us-page__intro .intro__content .content__info .info__grey .grey__img img {
   margin-bottom: -10px;
   width: 100%;
+  min-width: 16px;
 }
 
 .about_us-page__intro .intro__content .content__info .info__grey .grey__text {
@@ -7830,6 +7831,14 @@ a {
             flex: 0 1 48%;
   }
 
+  .about_us-page__intro .intro__content .content__info .info__logo {
+    width: 303px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__partners {
+    max-width: 70%;
+  }
+
   .devices__item .item__images img {
     margin-left: -40px;
     max-width: 130%;
@@ -8270,6 +8279,33 @@ a {
     position: relative;
     max-width: 70%;
     width: 100%;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__logo {
+    width: 403px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__grey {
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 24px 40px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__text {
+    margin-right: 0px;
+    margin-left: 31px;
+    margin-bottom: 45px;
+    max-width: 70vw;
+  }
+
+  .about_us-page__intro .intro__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .about_us-page__intro .intro__content .content__img {
+    display: none;
   }
 
   .page_title-mb-one-news {
@@ -9122,6 +9158,15 @@ a {
     line-height: normal;
   }
 
+  .about_us-page__intro .intro__content .content__info .info__text {
+    max-width: initial;
+    margin-bottom: 55px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__partners {
+    max-width: 100%;
+  }
+
   .devices__item .item__info {
     text-align: center;
   }
@@ -9505,6 +9550,22 @@ a {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 70%;
             flex: 0 1 70%;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__logo {
+    margin-bottom: 15px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__grey {
+    margin-bottom: 25px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__text {
+    margin-bottom: 44px;
+  }
+
+  .about_us-page__intro .intro__content .content__info {
+    padding-top: 24px;
   }
 
   .manufacturers__list .list__item .item__top .top__image {
@@ -10055,6 +10116,43 @@ a {
   .text_page__block {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__logo {
+    width: 340px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__grey {
+    margin-left: -24px;
+    margin-right: -24px;
+    padding: 24px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__grey .grey__text {
+    color: #272727;
+    font-size: 22px;
+    font-weight: 400px;
+    line-height: normal;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__text {
+    color: #272727;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__partners .partners__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin-bottom: 40px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__partners .partners__item img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
   }
 
   .container {
@@ -11066,6 +11164,10 @@ a {
     margin-right: 0px;
   }
 
+  .about_us-page__intro {
+    padding-bottom: 30px;
+  }
+
   .page_title-mb-one-news {
     margin-top: 5px;
   }
@@ -11336,6 +11438,43 @@ a {
 
   .text_page__block .text-with-image__image .video-js {
     min-height: 35vh;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__logo {
+    width: 300px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__grey .grey__img img {
+    min-width: 14px;
+    margin-bottom: -3px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__grey {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 8px 16px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__grey .grey__text {
+    color: #272727;
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: normal;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__text {
+    color: #272727;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__partners {
+    padding-right: 16px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__partners .partners__item img {
+    width: 85%;
   }
 
   .container {
@@ -11702,6 +11841,24 @@ a {
     min-height: 30vh;
   }
 
+  .about_us-page__intro .intro__content .content__info .info__grey {
+    width: 100vw;
+    margin-right: 0px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__grey .grey__text {
+    color: #272727;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: normal;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__text {
+    margin-left: 0px;
+    padding-left: 29px;
+    padding-right: 16px;
+  }
+
   .intro .intro__content .content__info .info__slider__pagination {
     max-width: 60%;
   }
@@ -12012,6 +12169,10 @@ a {
 
   .vebinars .tab_buttons__item {
     padding: 5px 8px 5px 4px;
+  }
+
+  .about_us-page__intro .intro__content .content__info .info__logo {
+    width: 283px;
   }
 
   .intro .intro__content .content__info .intro__innovations {
