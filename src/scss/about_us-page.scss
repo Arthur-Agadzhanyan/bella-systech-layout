@@ -1,0 +1,285 @@
+.about_us-page{
+    &__intro{
+        position: relative;
+       
+        padding-bottom: 66px;
+
+        .intro__content{
+            display: flex;
+            position: relative;
+
+            .content__info {
+                position: relative;
+                z-index: 2;
+                flex: 0 1 60%;
+
+                margin-right: -100px;
+
+                padding-top: 30px;
+                
+                .info__logo {
+                    width: 403px;
+                    margin-bottom: 30px;
+    
+                    img{
+                        width: 100%;
+                    }
+                }
+                
+                .info__grey {
+                    margin-left: -80px;
+                    padding: 24px 80px;
+                    display: flex;
+
+                    background: #F1F1F1;
+                    margin-bottom: 48px;
+
+                    .grey__img {
+                        width: 16px;
+                        margin-right: 15px;
+                        
+                        
+                        img{
+                            margin-bottom: -10px;
+                            width: 100%;
+                        }
+                    }
+                    .grey__text {
+                        font-family: Garamond;
+                        max-width: 828px;
+
+                        @include text($black,28px,400px,32px)
+                    }
+                }
+                .info__text {
+                    max-width: 529px;
+                    margin-right: 147px;
+                    // padding-right: 130px;
+                    margin-bottom: 37px;
+                    margin-left: auto;
+                    font-family: Garamond;
+
+                    @include text($black,24px,400,27px);
+                    
+                    .red{
+                        font-family: Garamond;
+                        color: #E11F26 !important;
+                    }
+                }
+                .info__partners {
+                    display: flex;
+                    max-width: 60%;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+
+                    .partners__item {
+                        flex: 0 1 32%;
+                        margin-bottom: 27px;
+
+                        img{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+    
+            .content__img {
+                position: relative;
+                z-index: 1;
+                flex: 0 1 50%;
+
+                img{
+                    width: 100%;
+                }
+            }  
+        }
+
+         
+    }
+
+    &__sertificates{
+        padding: 100px 0px;
+        background: #F1F1F1;
+
+        .sertificates__content{
+            .content__text{
+                max-width: 553px;
+                margin: 0 auto;
+                margin-top: 27px;
+                text-align: center;
+
+                font-family: Garamond;
+                @include text($black,24px,400)
+            }
+
+            .content__images {
+                max-width: 1360px;
+                margin: 0 auto;
+                margin-top: 45px;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .images__item {
+                    flex: 0 1 31%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    &__geolocation{
+        padding-top: 98px;
+        padding-bottom: 124px;
+
+        .section_title{
+            text-align: left;
+        }
+
+        .geolocation__content{
+            margin-top: 41px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .content__image{
+                position: relative;
+                z-index: 2;
+                flex: 0 1 60%;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .content__info{
+                position: relative;
+                z-index: 1;
+                flex: 0 1 39%;
+                .info__text{
+                    max-width: 553px;
+
+                    margin-left: 40px;
+                    margin-bottom: 32px;
+
+                    p{
+                        font-family: Garamond;
+                        @include text($black,18px,400);
+                        margin-bottom: 26px;
+                    }
+                }
+
+                .info__grey {
+                    margin-left: -23vw;
+                    background: #F1F1F1;
+                    padding: 28px 0px;
+
+                    .grey__container{
+                        max-width: 620px;
+                        margin-left: auto;
+                        padding-right: 50px;
+
+                        display: flex;
+                        align-items: flex-start;
+
+                        .grey__img {
+                            width: 27px;
+                            margin-right: 20px;
+                            
+                            img{
+                                width: 100%;
+                                margin-bottom: -10px;
+                            }
+                        }
+                        .grey__text {
+                            font-family: Garamond;
+                            @include text($black,32px,400px,32px)
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    &__offer{
+        background: #F1F1F1;
+        padding: 96px 0px 100px 0px;
+
+        .offer__content{
+            margin-top: 48px;
+
+            .content__list {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                padding-bottom: 56px;
+
+                .list__item {
+                    flex: 0 1 24%;
+                    background: #fff;
+                    
+                    .item__image {}
+
+                    .item__info{
+                        padding: 31px 24px 24px 24px;
+                        .info__title{
+                            @include text($black,24px,300);
+                            margin-bottom: 16px;
+                        }
+
+                        .info__text{
+                            font-family: Garamond;
+                            padding-left: 16px;
+                            @include text($black,18px,400);
+                        }
+                    }
+                }
+            }
+
+            .content__seminars{
+                max-width: 860px;
+                margin: 0 auto;
+                text-align: center;
+
+                .seminars__line{
+                    width: 100%;
+                    height: 1px;
+                    background: linear-gradient(267.29deg, #E11F26 4.23%, #DD408B 104.93%), #C4C4C4;
+                    margin-bottom: 50px;
+                }
+
+                .seminars__big_text{
+                    font-family: Garamond;
+                    @include text($black,32px,400,36px);
+                }
+
+                .seminars__image{
+                    display: block;
+                    width: 15px;
+                    margin: 20px auto;
+                }
+
+                .seminars__clinic{
+                    font-family: Garamond;
+                    @include text($black,28px,400,36px);
+
+                    .clinic__link{
+                        font-weight: 600;
+                        font-family: Garamond;
+                        text-decoration: underline;
+                        color: #de3364;
+                    }
+                }
+            }
+        }
+    }
+}
