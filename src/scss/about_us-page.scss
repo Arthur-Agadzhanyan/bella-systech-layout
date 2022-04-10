@@ -253,7 +253,18 @@
                 text-align: center;
 
                 font-family: Garamond;
-                @include text($black,24px,400)
+                @include text($black,24px,400);
+
+                @media screen and (max-width: 500px) {
+                    margin-top: 16px;
+                    @include text($black,20px,400);
+                }
+                @media screen and (max-width: 400px) {
+                    @include text($black,18px,400);
+                }
+                @media screen and (max-width: 360px) {
+                    @include text($black,16px,400);
+                }
             }
 
             .content__images {
@@ -271,8 +282,40 @@
                         width: 100%;
                     }
                 }
+                @media screen and (max-width: 700px) {
+                    flex-wrap: wrap;
+                    align-items: initial;
+                    .images__item {
+                        flex: 0 1 48%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 500px) {
+                    margin-top: 32px;
+                    .images__item {
+                        flex: 0 1 70%;
+                        margin: 0 auto;
+                        margin-bottom: 16px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 400px) {
+                    .images__item {
+                        flex: 0 1 80%;
+                    }
+                }
             }
             
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 45px 0px;
         }
     }
     
@@ -369,20 +412,91 @@
                     flex: 0 1 24%;
                     background: #fff;
                     
-                    .item__image {}
+                    .item__image {
+                        .item__mb{
+                            display: none;
+                        }
+                        @media screen and (max-width: 500px) {
+                            img{
+                                display: none;
+                            }
+                            .item__mb{
+                                display: block;
+                            }
+                        }
+                    }
 
                     .item__info{
                         padding: 31px 24px 24px 24px;
                         .info__title{
                             @include text($black,24px,300);
                             margin-bottom: 16px;
+
+                            @media screen and (max-width: 500px){
+                                margin-bottom: 8px;
+                            }
                         }
 
                         .info__text{
                             font-family: Garamond;
                             padding-left: 16px;
                             @include text($black,18px,400);
+
+                            @media screen and (max-width: 500px){
+                                @include text($black,16px,400);
+                            }
                         }
+
+                        @media screen and (max-width: 500px){
+                            padding: 15px 31px 16px 16px;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 1500px) {
+                    .list__item{
+                        flex: 0 1 32%;
+                        margin-bottom: 32px;
+
+                        &:last-child{
+                            margin: 0 auto;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 1200px) {
+                    .list__item{
+                        flex: 0 1 48.5%;
+                        margin-bottom: 32px;
+
+                        &:last-child{
+                            margin: 0;
+                            margin-bottom: 32px;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 750px) {
+                    .list__item{
+                        flex: 0 1 70%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        &:last-child{
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                }
+                @media screen and (max-width: 600px) {
+                    .list__item{
+                        flex: 0 1 90%;
+                    }
+                }
+
+                @media screen and (max-width: 500px) {
+                    padding-bottom: 15px;
+                    .list__item{
+                        flex: 0 1 100%;
                     }
                 }
             }
@@ -397,11 +511,19 @@
                     height: 1px;
                     background: linear-gradient(267.29deg, #E11F26 4.23%, #DD408B 104.93%), #C4C4C4;
                     margin-bottom: 50px;
+
+                    @media screen and (max-width: 500px) {
+                        display: none;
+                    }
                 }
 
                 .seminars__big_text{
                     font-family: Garamond;
                     @include text($black,32px,400,36px);
+
+                    @media screen and (max-width: 500px) {
+                        @include text($black,24px,400);
+                    }
                 }
 
                 .seminars__image{
@@ -420,8 +542,23 @@
                         text-decoration: underline;
                         color: #de3364;
                     }
+
+                    @media screen and (max-width: 500px) {
+                        @include text($black,22px,400);
+                        .clinic__link{
+                            display: block;
+                        }
+                    }
                 }
             }
+
+            @media screen and (max-width: 500px) {
+                margin-top: 32px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 50px 0px;
         }
     }
 }
