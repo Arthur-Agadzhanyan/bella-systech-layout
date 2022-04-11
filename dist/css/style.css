@@ -11080,6 +11080,14 @@ a {
     line-height: normal;
   }
 
+  .order_modal .modal__content {
+    height: 95vh;
+  }
+
+  .order_modal .overlay {
+    background: #fff !important;
+  }
+
   #orderAcceptedModal .modal__content__text {
     max-width: 150px;
     margin-bottom: 32px;
@@ -11953,8 +11961,12 @@ a {
   }
 
   .close {
-    top: 16px;
+    top: 24px;
     right: 16px;
+  }
+
+  .order_modal .modal__content__form .form__check_item .item__check .check__text {
+    font-size: 12px;
   }
 
   .order_modal .modal__content {
@@ -12438,6 +12450,18 @@ a {
   }
 }
 
+@media screen and (max-width: 450px) and (max-width: 450px) {
+  .order_modal .modal__content__form .form__check_item .item__check .check__text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) and (max-width: 360px) {
+  .order_modal .modal__content__form .form__check_item {
+    margin-left: 0px;
+  }
+}
+
 @media screen and (max-width: 450px) and (min-height: 800px) {
   .one-product__procedure .procedure__block .block__item .video-js {
     min-height: 25vh;
@@ -12488,10 +12512,6 @@ a {
 
   .nav_menu__content .content__contacts .contacts__title {
     font-size: 18px;
-  }
-
-  .order_modal .modal__content {
-    height: 100vh;
   }
 
   #orderAcceptedModal .modal__content {
@@ -12995,6 +13015,10 @@ a {
     -webkit-transform: translateY(95px);
         -ms-transform: translateY(95px);
             transform: translateY(95px);
+  }
+
+  .order_modal .modal__content__form .form__check_item {
+    margin-left: 0px;
   }
 
   .list_of_items__item .item__info .info__title {

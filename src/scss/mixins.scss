@@ -176,7 +176,15 @@
                     margin-left: 8px;
                     @include text($black, 14px, 400);
                     transition: .1s linear;
+
+                    @media screen and (max-width: 450px) {
+                        font-size: 12px;
+                    }
                   }
+                }
+
+                @media screen and (max-width: 360px) {
+                    margin-left: 0px;
                 }
               }
         }
