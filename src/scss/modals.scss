@@ -16,7 +16,7 @@
 //     @include modal()    
 // }
 
-.login_modal{
+.order_modal{
     @include modal(1200px);
 
     transition: .2s linear;
@@ -58,4 +58,51 @@
         @include modal(100vw);
     }
     
+}
+
+#orderAcceptedModal{
+    .modal__content{
+        padding-top: 128px;
+        padding-bottom: 128px;
+
+        &__title{
+            margin-bottom: 32px;
+
+            @media screen and (max-width: 450px) {
+                max-width: 320px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 24px;
+            }
+        }
+
+        &__text{
+            margin-bottom: 48px;
+
+            @media screen and (max-width: 500px) {
+                max-width: 150px;
+                margin-bottom: 32px;
+            }
+        }
+
+        .modal__btn{
+            max-width: 208px;
+            display: block;
+            margin: 0 auto;
+
+            @media screen and (max-width: 500px) {
+                max-width: 164px;
+                padding: 13px 44px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            height: initial;
+        }
+
+        @media screen and (max-width: 450px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
 }
