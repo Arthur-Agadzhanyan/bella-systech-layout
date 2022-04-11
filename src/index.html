@@ -584,6 +584,48 @@
 
     @@include('_footer.html')
 
+    <div id="callOrderModal" class="login_modal">
+        <div class="overlay"></div>
+        <div class="modal__content">
+            <div class="close close_modal">
+                <img src="img/icons/close.svg" alt="">           
+            </div>
+                
+            <h2 class="modal__content__title">Закажите прямо сейчас!</h2>
+            
+            <p class="modal__content__text">мы свяжемся с вами для уточнения деталей в течение часа</p>
+
+            <div class="form__container">
+                <form id="openTextModal" class="modal__content__form">
+                    <div class="form__div">
+                        <input type="text" id="name_modal" class="form__input" placeholder=" " required>
+                        <label for="name_modal"class="form__label">ФИО</label>
+                    </div>
+
+                    <div class="form__div">
+                        <input type="text" id="phone_modal" class="form__input" placeholder=" " required>
+                        <label for="phone_modal"class="form__label">Телефон</label>
+                    </div>
+
+                    <div class="form__div">
+                        <input type="email" id="email_modal" class="form__input" placeholder=" " required>
+                        <label for="email_modal"class="form__label">Почта</label>
+                    </div>
+    
+                    <button  class="button gradient_btn modal__btn"><span>Заказать</span></button>
+                    <div class="form__check_item">
+                        <label class="item__check">
+                            <input type="checkbox" class="check__input" required>
+                            <span class="check__custom"></span>
+                            <span class="check__text">Согласие на обработку персональных данных</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.min.js"></script>
 </body>

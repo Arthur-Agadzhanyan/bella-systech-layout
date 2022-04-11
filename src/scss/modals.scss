@@ -1,0 +1,61 @@
+.close{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+
+    cursor: pointer;
+
+    
+    @media screen and (max-width: 450px) {
+        top: 16px;
+        right: 16px;
+    }
+}
+
+// .modal_bell{
+//     @include modal()    
+// }
+
+.login_modal{
+    @include modal(1200px);
+
+    transition: .2s linear;
+
+    .form__container{
+        @include modalContainer(410px, 22px auto);
+
+    }
+
+    .modal__content{
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        @media screen and (max-width: 450px) {
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+        }
+
+        &__text{}
+
+        &__title{
+            @media screen and (max-width: 450px) {
+                max-width: 207px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            height: 100vh;
+        }
+    }
+
+    &__text{
+        margin-top: 24px;
+    }
+
+    @media screen and (max-width: 450px) {
+        @include modal(100vw);
+    }
+    
+}

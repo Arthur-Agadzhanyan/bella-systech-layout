@@ -872,6 +872,268 @@ template {
   display: none;
 }
 
+.close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  cursor: pointer;
+}
+
+.login_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000000000000000000;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  opacity: 0;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.login_modal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.login_modal .modal__content {
+  position: relative;
+  z-index: 300;
+  max-width: 1200px;
+  padding: 80px 16px 88px 16px;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+.login_modal .modal__content__title {
+  color: #272727;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.login_modal .modal__content__text {
+  font-family: Garamond;
+  color: #272727;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 auto;
+}
+
+.login_modal .modal__content__form {
+  margin-top: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login_modal .modal__content__form .form__div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  position: relative;
+  color: #272727;
+  margin-bottom: 24px;
+}
+
+.login_modal .modal__content__form .form__div .form__input {
+  width: 100%;
+  background: transparent;
+  padding: 21px 24px;
+  position: relative;
+  z-index: 2;
+  color: #272727;
+  border: 1px solid #848484;
+  outline: none;
+  border-radius: 8px;
+  color: #272727;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login_modal .modal__content__form .form__div .form__input:not(:-moz-placeholder-shown).form__input:not(:focus) + .form__label {
+  top: 10px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.login_modal .modal__content__form .form__div .form__input:not(:-ms-input-placeholder).form__input:not(:focus) + .form__label {
+  top: 10px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.login_modal .modal__content__form .form__div .form__input:focus + .form__label,
+.login_modal .modal__content__form .form__div .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+  top: 10px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.login_modal .modal__content__form .form__div .form__input:not(:-moz-placeholder-shown) {
+  padding: 29px 24px 13px 24px;
+}
+
+.login_modal .modal__content__form .form__div .form__input:not(:-ms-input-placeholder) {
+  padding: 29px 24px 13px 24px;
+}
+
+.login_modal .modal__content__form .form__div .form__input:focus,
+.login_modal .modal__content__form .form__div .form__input:not(:placeholder-shown) {
+  padding: 29px 24px 13px 24px;
+}
+
+.login_modal .modal__content__form .form__div .form__label {
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  position: absolute;
+  left: 24px;
+  top: 21px;
+  z-index: 1;
+  color: #848484;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login_modal .modal__content__form .form__check_item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 24px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.login_modal .modal__content__form .form__check_item .item__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.login_modal .modal__content__form .form__check_item .item__check .check__input {
+  display: none;
+}
+
+.login_modal .modal__content__form .form__check_item .item__check .check__custom {
+  position: relative;
+  display: block;
+  min-width: 22px;
+  min-height: 22px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid #848484;
+  -webkit-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+}
+
+.login_modal .modal__content__form .form__check_item .item__check .check__custom:before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 15px;
+  height: 11px;
+  background: url("../img/icons/checked.svg") no-repeat center;
+  -webkit-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+}
+
+.login_modal .modal__content__form .form__check_item .item__check .check__input:checked + .check__custom {
+  background: white;
+}
+
+.login_modal .modal__content__form .form__check_item .item__check .check__input:checked + .check__custom:before {
+  opacity: 1;
+}
+
+.login_modal .modal__content__form .form__check_item .item__check .check__text {
+  margin-left: 8px;
+  color: #272727;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+}
+
+.login_modal .modal__content a {
+  text-decoration: none;
+}
+
+.login_modal .modal__content .modal__btn {
+  display: block;
+  width: 100%;
+  padding: 21px 16px 21px 16px;
+  margin-top: 8px;
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.login_modal .form__container {
+  max-width: 410px;
+  width: 100%;
+  margin: 22px auto;
+}
+
+.login_modal .modal__content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.login_modal__text {
+  margin-top: 24px;
+}
+
 .button {
   padding: 15px 40px;
   -webkit-transition: all .2s linear;
@@ -10402,6 +10664,21 @@ a {
     padding-bottom: 5px;
   }
 
+  .login_modal .modal__content__title {
+    color: #272727;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+
+  .login_modal .modal__content__text {
+    color: #272727;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
   .list_of_items-vebinars .list_of_items__item .item__video .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
     -webkit-transform: scale(0.8);
         -ms-transform: scale(0.8);
@@ -11646,6 +11923,259 @@ a {
             transform: translateY(111px);
   }
 
+  .close {
+    top: 16px;
+    right: 16px;
+  }
+
+  .login_modal .modal__content {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .login_modal .modal__content__title {
+    max-width: 207px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .login_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000000000000000000;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: none;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    opacity: 0;
+  }
+
+  .login_modal .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .login_modal .modal__content {
+    position: relative;
+    z-index: 300;
+    max-width: 100vw;
+    padding: 80px 16px 88px 16px;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+  }
+
+  .login_modal .modal__content__title {
+    color: #272727;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+
+  .login_modal .modal__content__text {
+    font-family: Garamond;
+    color: #272727;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 auto;
+  }
+
+  .login_modal .modal__content__form {
+    margin-top: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .login_modal .modal__content__form .form__div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    position: relative;
+    color: #272727;
+    margin-bottom: 24px;
+  }
+
+  .login_modal .modal__content__form .form__div .form__input {
+    width: 100%;
+    background: transparent;
+    padding: 21px 24px;
+    position: relative;
+    z-index: 2;
+    color: #272727;
+    border: 1px solid #848484;
+    outline: none;
+    border-radius: 8px;
+    color: #272727;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .login_modal .modal__content__form .form__div .form__input:not(:-moz-placeholder-shown).form__input:not(:focus) + .form__label {
+    top: 10px;
+    font-size: 12px;
+    z-index: 10;
+  }
+
+  .login_modal .modal__content__form .form__div .form__input:not(:-ms-input-placeholder).form__input:not(:focus) + .form__label {
+    top: 10px;
+    font-size: 12px;
+    z-index: 10;
+  }
+
+  .login_modal .modal__content__form .form__div .form__input:focus + .form__label,
+  .login_modal .modal__content__form .form__div .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+    top: 10px;
+    font-size: 12px;
+    z-index: 10;
+  }
+
+  .login_modal .modal__content__form .form__div .form__input:not(:-moz-placeholder-shown) {
+    padding: 29px 24px 13px 24px;
+  }
+
+  .login_modal .modal__content__form .form__div .form__input:not(:-ms-input-placeholder) {
+    padding: 29px 24px 13px 24px;
+  }
+
+  .login_modal .modal__content__form .form__div .form__input:focus,
+  .login_modal .modal__content__form .form__div .form__input:not(:placeholder-shown) {
+    padding: 29px 24px 13px 24px;
+  }
+
+  .login_modal .modal__content__form .form__div .form__label {
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    position: absolute;
+    left: 24px;
+    top: 21px;
+    z-index: 1;
+    color: #848484;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .login_modal .modal__content__form .form__check_item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0;
+    margin-top: 24px;
+    margin-left: 30px;
+    text-align: left;
+  }
+
+  .login_modal .modal__content__form .form__check_item .item__check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+
+  .login_modal .modal__content__form .form__check_item .item__check .check__input {
+    display: none;
+  }
+
+  .login_modal .modal__content__form .form__check_item .item__check .check__custom {
+    position: relative;
+    display: block;
+    min-width: 22px;
+    min-height: 22px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid #848484;
+    -webkit-transition: .1s linear;
+    -o-transition: .1s linear;
+    transition: .1s linear;
+  }
+
+  .login_modal .modal__content__form .form__check_item .item__check .check__custom:before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 15px;
+    height: 11px;
+    background: url("../img/icons/checked.svg") no-repeat center;
+    -webkit-transition: .1s linear;
+    -o-transition: .1s linear;
+    transition: .1s linear;
+  }
+
+  .login_modal .modal__content__form .form__check_item .item__check .check__input:checked + .check__custom {
+    background: white;
+  }
+
+  .login_modal .modal__content__form .form__check_item .item__check .check__input:checked + .check__custom:before {
+    opacity: 1;
+  }
+
+  .login_modal .modal__content__form .form__check_item .item__check .check__text {
+    margin-left: 8px;
+    color: #272727;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    -webkit-transition: .1s linear;
+    -o-transition: .1s linear;
+    transition: .1s linear;
+  }
+
+  .login_modal .modal__content a {
+    text-decoration: none;
+  }
+
+  .login_modal .modal__content .modal__btn {
+    display: block;
+    width: 100%;
+    padding: 21px 16px 21px 16px;
+    margin-top: 8px;
+    cursor: pointer;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear;
+  }
+
   .list_of_items-products .list_of_items__item .item__info .info__text {
     font-size: 12px;
   }
@@ -11850,6 +12380,23 @@ a {
   }
 }
 
+@media screen and (max-width: 450px) and (max-width: 600px) {
+  .login_modal .modal__content__title {
+    color: #272727;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+
+  .login_modal .modal__content__text {
+    color: #272727;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+
 @media screen and (max-width: 450px) and (min-height: 800px) {
   .one-product__procedure .procedure__block .block__item .video-js {
     min-height: 25vh;
@@ -11900,6 +12447,10 @@ a {
 
   .nav_menu__content .content__contacts .contacts__title {
     font-size: 18px;
+  }
+
+  .login_modal .modal__content {
+    height: 100vh;
   }
 
   .list_of_items__item .item__info .info__bottom .bottom__arrow-mb {
