@@ -41,7 +41,7 @@ burgerBtn.addEventListener('click',(e)=>{
     }else{
         setTimeout(()=>{
             menuBar.classList.add("bot_0")
-        },400)
+        },395)
     } 
 
     document.body.classList.toggle('overf_hidden')
