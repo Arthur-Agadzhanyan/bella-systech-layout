@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html',{title: "Bella Systech | Каталог"})
+
+<body class="news-page">
+@@include('_navigation.html')
+
+<main class="search-page page-content">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="/" class="breadcrumbs__item">Главная</a>
+            <a href="/search.html" class="breadcrumbs__item breadcrumbs__item-active">Поиск</a>
+        </div>
+        <h1 class="page_title">Поиск</h1>
+
+        <form class="search__controls">
+            <input type="text" class="controls__input" placeholder=" " required>
+
+            <button class="button gradient_btn controls__button">
+                <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5 28.5C23.1274 28.5 28.5 23.1274 28.5 16.5C28.5 9.87258 23.1274 4.5 16.5 4.5C9.87258 4.5 4.5 9.87258 4.5 16.5C4.5 23.1274 9.87258 28.5 16.5 28.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.4996 31.5001L24.9746 24.9751" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <strong>Поиск</strong>
+                </span>
+            </button>
+        </form>
+
+        <div class="search__list">
+            <div class="list__item">
+                <h4 class="item__title mb-24">Наименование найденой записи</h4>
+                <p class="item__text mb-24">Кусок текста из статьи иди страницы товара длянной не более 500 символов. Кусок текста из статьи иди страницы товара длянной не более 500 символов.</p>
+                <a href="/" class="item__link">Подробнее</a>
+            </div>
+
+            <div class="list__item">
+                <h4 class="item__title mb-24">Наименование найденой записи</h4>
+                <p class="item__text mb-24">Кусок текста из статьи иди страницы товара длянной не более 500 символов. Кусок текста из статьи иди страницы товара длянной не более 500 символов.</p>
+                <a href="/" class="item__link">Подробнее</a>
+            </div>
+
+            <div class="list__item">
+                <h4 class="item__title mb-24">Наименование найденой записи</h4>
+                <p class="item__text mb-24">Кусок текста из статьи иди страницы товара длянной не более 500 символов. Кусок текста из статьи иди страницы товара длянной не более 500 символов.</p>
+                <a href="/" class="item__link">Подробнее</a>
+            </div>
+
+            <div class="list__item">
+                <h4 class="item__title mb-24">Наименование найденой записи</h4>
+                <p class="item__text mb-24">Кусок текста из статьи иди страницы товара длянной не более 500 символов. Кусок текста из статьи иди страницы товара длянной не более 500 символов.</p>
+                <a href="/" class="item__link">Подробнее</a>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+@@include('_footer.html')
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>
