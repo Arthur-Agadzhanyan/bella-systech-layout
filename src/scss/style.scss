@@ -261,6 +261,16 @@ a {
           }
         }
 
+        @media screen and (max-width: 1600px) {
+          bottom: 5px;
+          left: 210px;
+        }
+
+        @media screen and (max-width: 1260px) {
+          bottom: 5px;
+          left: 210px;
+        }
+
         @media screen and (max-width: 700px) {
           left: 60px;
         }
@@ -398,6 +408,10 @@ a {
                   font-family: "Garamond";
                   @include text(#272727, 24px, 400);
 
+                  @media screen and (max-width: 1600px) {
+                    padding-bottom: 20px;
+                  }
+
                   @media screen and (max-width: 500px) {
                     @include text(#272727, 20px, 400);
                     padding-bottom: 29px;
@@ -411,6 +425,14 @@ a {
                 .slide__btn {
                   font-size: 18px;
                   padding: 21px 56px;
+
+                  @media screen and (max-width: 1600px) {
+                    padding: 18px 56px;
+                  }
+
+                  @media screen and (max-width: 1260px) {
+                    padding: 15px 56px;
+                  }
 
                   @media screen and (max-width: 500px) {
                     padding: 13px 33px;

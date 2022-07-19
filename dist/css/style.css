@@ -7906,6 +7906,19 @@ a {
     line-height: normal;
   }
 
+  .intro .intro__content .content__info .info__slider__pagination {
+    bottom: 5px;
+    left: 210px;
+  }
+
+  .intro .intro__content .content__info .sliders .sliders__content .info__slider_text .info__slider__slide .slide__grey .slide__text {
+    padding-bottom: 20px;
+  }
+
+  .intro .intro__content .content__info .sliders .sliders__content .info__slider_text .info__slider__slide .slide__grey .slide__btn {
+    padding: 18px 56px;
+  }
+
   .intro .intro__content .content__info .sliders .sliders__content .info__slider_image .info__slider__slide img {
     max-width: 90%;
   }
@@ -8559,6 +8572,17 @@ a {
   .manufacturers__list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .intro .intro__content .content__info .info__slider__pagination {
+    bottom: 5px;
+    left: 210px;
+  }
+
+  .intro .intro__content .content__info .sliders .sliders__content .info__slider_text .info__slider__slide .slide__grey .slide__btn {
+    padding: 15px 56px;
   }
 }
 
